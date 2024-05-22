@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:rotation="90"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:src="@drawable/ground"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"></ImageView>
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:weightSum="1">-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:id="@+id/teamOne"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:background="#fac"-->
+    <!--            android:layout_weight="0.5">-->
+
+    <!--            <include layout="@layout/player_card"-->
+    <!--                android:id="@+id/player_one"/>-->
+
+    <!--            <include layout="@layout/player_card"-->
+    <!--                android:id="@+id/player_one"/>-->
+    <!--            <include layout="@layout/player_card"-->
+    <!--                android:id="@+id/player_one"/>-->
+
+    <!--            <include-->
+    <!--                android:id="@+id/player_one"-->
+    <!--                layout="@layout/player_card"-->
+    <!--                />-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:id="@+id/teamTwo"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="0dp"-->
+    <!--            android:background="#caf"-->
+    <!--            android:layout_weight="0.5">-->
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    <!--    </LinearLayout>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/teamOne"
+        android:layout_width="match_parent"
+        android:layout_height="366dp"
+        app:layout_constraintBottom_toTopOf="@+id/teamTwo"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <include
+            android:id="@+id/keeperOne"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/playerOne"
+            app:layout_constraintEnd_toStartOf="@+id/playerTwo"
+            app:layout_constraintStart_toEndOf="@+id/playerOne"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/playerTwo"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/playerOne"
+            tools:layout_editor_absoluteY="147dp" />
+
+        <include
+            android:id="@+id/playerOne"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/playerTwo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="147dp" />
+
+        <include
+            android:id="@+id/playerThree"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toStartOf="@+id/playerFour"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <include
+            android:id="@+id/playerFour"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/playerThree"
+            tools:layout_editor_absoluteY="278dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/teamTwo"
+        android:layout_width="match_parent"
+        android:layout_height="366dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/teamOne"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

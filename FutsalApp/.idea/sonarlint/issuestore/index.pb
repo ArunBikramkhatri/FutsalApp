@@ -1,0 +1,19 @@
+
+f
+6app/src/main/java/com/nura/futsalapp/MainActivity.java,7/3/73a583a76ff5c69280a9d2f3e409bdcbe49b9327
+Å
+Qapp/src/main/java/com/nura/futsalapp/recyclerViewAdapter/RecyclerViewAdapter.java,1/c/1c6e3b44acbceb62cb1f263ef80cac3c7e2045f7
+f
+6app/src/main/java/com/nura/futsalapp/model/Player.java,a/b/abdd9e365404444230ddf7dc74a6031785a3d4a9
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+@
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164
+m
+=app/src/main/java/com/nura/futsalapp/model/TeamFormation.java,a/f/af252f0458d9f788f71b5e0f1610cc38f5b694bf
+q
+Aapp/src/test/java/com/nura/futsalapp/model/TeamFormationTest.java,e/f/ef0d73a692f4bb883e68e6202cd07caba2d65f79
+k
+;app/src/main/java/com/nura/futsalapp/model/ListPlayers.java,b/e/be4e6bc3c8ddecd00cfcb17e2e54d73be42a2ee5
+j
+:app/src/test/java/com/nura/futsalapp/MainActivityTest.java,5/7/57b065dd3dcbcaffff62ddb1dc12909081b81d25
