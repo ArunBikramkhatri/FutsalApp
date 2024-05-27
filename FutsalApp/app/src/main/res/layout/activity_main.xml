@@ -6,53 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:scaleType="fitXY"
+        android:src="@drawable/footballfield"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"></ImageView>
+
+    <include
+        layout="@layout/player_card"
+        android:id="@+id/keeperOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_two"></include>
+
+
+    <include
+        android:id="@+id/keeperTwo"
+        layout="@layout/player_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/team_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/team_one"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.45"
+        android:rotation="180"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        tools:ignore="MissingConstraints"></androidx.recyclerview.widget.RecyclerView>
 
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-16dp"></androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/make_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="646dp"></Button>
 
-    <LinearLayout
-        android:id="@+id/linear_layout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:weightSum="1"
-        android:orientation="horizontal"
-        app:layout_constraintHeight_percent="0.1"
-
-        app:layout_constraintTop_toBottomOf="@+id/team_one"
-        tools:ignore="MissingConstraints">
-
-        <TextView
-            android:id="@+id/vs"
-            android:layout_width="0dp"
-            android:layout_weight="0.6"
-            android:layout_height="match_parent"
-            android:text="VS"
-            android:textAlignment="center"
-            android:textSize="60dp"
-            app:layout_constraintHeight_percent="0.1"
-            app:layout_constraintTop_toBottomOf="@+id/team_one"
-            tools:layout_editor_absoluteX="16dp"></TextView>
-
-        <Button
-            android:id="@+id/make_team"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.4"
-            android:text="Team">
-        </Button>
-    </LinearLayout>
     <androidx.recyclerview.widget.RecyclerView
-
         android:id="@+id/team_two"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.45"
-        app:layout_constraintTop_toBottomOf="@+id/linear_layout"
-        tools:layout_editor_absoluteX="16dp"></androidx.recyclerview.widget.RecyclerView>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintWidth_percent="0.8"></androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

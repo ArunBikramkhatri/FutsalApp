@@ -70,46 +70,52 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/playerOne"
             app:layout_constraintEnd_toStartOf="@+id/playerTwo"
+            app:layout_constraintHorizontal_bias="0.47"
             app:layout_constraintStart_toEndOf="@+id/playerOne"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.742" />
 
         <include
             android:id="@+id/playerTwo"
             layout="@layout/player_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/playerFour"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/playerOne"
-            tools:layout_editor_absoluteY="147dp" />
+            app:layout_constraintStart_toEndOf="@+id/playerOne" />
 
         <include
             android:id="@+id/playerOne"
             layout="@layout/player_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/playerThree"
             app:layout_constraintEnd_toStartOf="@+id/playerTwo"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="147dp" />
-
-        <include
-            android:id="@+id/playerThree"
-            layout="@layout/player_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toStartOf="@+id/playerFour"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="278dp" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <include
             android:id="@+id/playerFour"
             layout="@layout/player_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/playerThree"
-            tools:layout_editor_absoluteY="278dp" />
+            app:layout_constraintStart_toEndOf="@+id/playerThree" />
+
+        <include
+            android:id="@+id/playerThree"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/playerFour"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

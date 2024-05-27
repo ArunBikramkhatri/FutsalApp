@@ -1,6 +1,7 @@
 package com.nura.futsalapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -68,10 +69,10 @@ public class MainActivity extends AppCompatActivity {
         teamFormation.makeTeam();
         teamFormation.addListPlayer(midfields);
         teamFormation.makeTeam();
-        teamFormation.addListPlayer(defenders);
-        teamFormation.makeTeam();
-        teamFormation.addListPlayer(goalkeepers);
-        teamFormation.makeTeam();
+//        teamFormation.addListPlayer(defenders);
+//        teamFormation.makeTeam();
+//        teamFormation.addListPlayer(goalkeepers);
+//        teamFormation.makeTeam();
     }
 
 
@@ -84,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
     public void initTeamOne() {
         teamOneAdapter = new RecyclerViewAdapter(teamFormation.getTeamOne());
         teamOneRecycler.setAdapter(teamOneAdapter);
-        teamOneRecycler.setLayoutManager(new LinearLayoutManager(this));
+        teamOneRecycler.setLayoutManager(new GridLayoutManager(this ,2));
 
     }
 
@@ -92,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
 
         teamTwoAdapter = new RecyclerViewAdapter(teamFormation.getTeamTwo());
         teamTwoRecycler.setAdapter(teamTwoAdapter);
-        teamTwoRecycler.setLayoutManager(new LinearLayoutManager(this));
+        teamTwoRecycler.setLayoutManager(new GridLayoutManager(this ,3));
     }
 
 

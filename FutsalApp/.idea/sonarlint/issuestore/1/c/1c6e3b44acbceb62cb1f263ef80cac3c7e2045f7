@@ -1,6 +1,9 @@
 
 Œ
-java:S1319"oThe type of "playerArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ë³üé8¥®ö¥ù1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8ê×ì¥ù1
-k
-java:S16592"IDeclare "playerRating" and all following declarations on a separate line.(¥öùáúÿÿÿÿ8”ÿê§ù1
+java:S1319"oThe type of "playerArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ë³üé8ˆ¦şÀû1
+E
+java:S1604+"(Make this anonymous inner class a lambda(ú€´Ö8ˆ¦şÀû1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8‰¦şÀû1
+]	java:S125B"<This block of commented-out lines of code should be removed.(°º°ìûÿÿÿÿ8§¦şÀû1
+J
+java:S1068;"-Remove this unused "imageView" private field.(øû¯8¨¦şÀû1
