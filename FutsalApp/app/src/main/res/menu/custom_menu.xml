@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/btm_home"
+        android:title="Fixtures"
+        android:icon="@drawable/fixtures"></item>
+
+    <item android:id="@+id/btm_player"
+        android:title="Match"
+        android:icon="@drawable/home"></item>
+
+    <item android:id="@+id/btm_game"
+        android:title="Players"
+        android:icon="@drawable/players"></item>
+</menu>

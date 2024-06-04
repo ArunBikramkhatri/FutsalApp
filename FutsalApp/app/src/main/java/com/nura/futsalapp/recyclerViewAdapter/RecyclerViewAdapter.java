@@ -1,6 +1,10 @@
 package com.nura.futsalapp.recyclerViewAdapter;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,9 +26,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     private static final String TAG = "RecyclerViewAdapter";
     ArrayList<Player> playerArrayList ;
 
-
+    private Activity activity ;
     public RecyclerViewAdapter(ArrayList<Player> playerArrayList) {
         this.playerArrayList = playerArrayList;
+    }
+
+    public void setActivity(Activity activity) {
+        this.activity = activity;
     }
 
     @NonNull
@@ -44,6 +52,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "onClick: " + playerArrayList.get(position).getName());
+
+                final Dialog dialog = new Dialog(holder.itemView.getContext(), com.google.android.material.R.style.Theme_AppCompat_DayNight);
+                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.argb(100, 0, 0, 0))) ;
+                dialog.setContentView(R.layout.player_stat_pop_up);
+                dialog.setCancelable(true);
+                dialog.show();
             }
         });
     }

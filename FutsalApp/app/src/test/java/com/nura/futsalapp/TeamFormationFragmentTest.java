@@ -2,10 +2,10 @@ package com.nura.futsalapp;
 
 import org.junit.Test;
 
-public class MainActivityTest {
+public class TeamFormationFragmentTest {
 	@Test
 	public void initTeamOne() {
-//		MainActivity m = new MainActivity();
+//		TeamFormationFragment m = new TeamFormationFragment();
 //		m.initTeamOne();
 	}
 }

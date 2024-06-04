@@ -28,7 +28,7 @@ L	java:S106F"+Replace this use of System.out by a logger.(§Ì¡æøÿÿÿÿ8á÷öÕù1
 G	java:S106U"+Replace this use of System.out by a logger.(œÎâ½8ã÷öÕù1
 X	java:S125X"<This block of commented-out lines of code should be removed.(ŠÄ©é8ã÷öÕù1
 U
-java:S1128"3Remove this unused import 'org.json.JSONException'.(¹Ó·úÿÿÿÿ8ä÷öÕù1
+java:S1128"3Remove this unused import 'org.json.JSONException'.(¹Ó·úÿÿÿÿ8êáÒêû1
 Q
 java:S1068"/Remove this unused "teamDetails" private field.(¾½à·ùÿÿÿÿ8ØğøÕù1
 F

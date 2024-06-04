@@ -1,0 +1,21 @@
+
+J
+java:S1604}"(Make this anonymous inner class a lambda(Êœüûÿÿÿÿ8ó’…ş1
+N
+java:S1659",Declare "teamTwoAdapter" on a separate line.(ÛæÁ’ûÿÿÿÿ8¦œ„ş1
+O
+java:S1659"-Declare "teamTwoRecycler" on a separate line.(‹çÉ—şÿÿÿÿ8¦œ„ş1
+N
+java:S1659",Declare "teamTwoPlayers" on a separate line.(À‡ëºşÿÿÿÿ8¦œ„ş1
+
+java:S1450"]Remove the "teamOneAdapter" field and declare it as a local variable in the relevant methods.(ÛæÁ’ûÿÿÿÿ8¦œ„ş1
+
+java:S1450"]Remove the "teamTwoAdapter" field and declare it as a local variable in the relevant methods.(ÛæÁ’ûÿÿÿÿ8¦œ„ş1
+D
+java:S1185("(Remove this method to simply inherit it.(¥Ë©8ˆ“…ş1
+]	java:S1256"<This block of commented-out lines of code should be removed.(€Ù’øÿÿÿÿ8’“…ş1
+K
+java:S1481O".Remove this unused "defenders" local variable.(çø‡¦8’“…ş1
+M
+java:S1481W"0Remove this unused "goalkeepers" local variable.(©Å¬8’“…ş1
+]	java:S125a"<This block of commented-out lines of code should be removed.(“ª‹ıÿÿÿÿ8““…ş1

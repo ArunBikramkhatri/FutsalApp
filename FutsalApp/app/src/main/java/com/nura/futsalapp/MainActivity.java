@@ -1,111 +1,54 @@
 package com.nura.futsalapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.util.Log;
 
-import com.nura.futsalapp.model.Player;
-import com.nura.futsalapp.model.TeamFormation;
-import com.nura.futsalapp.recyclerViewAdapter.RecyclerViewAdapter;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
 
-import java.util.ArrayList;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.nura.futsalapp.ui.PlayerListFragment;
+import com.nura.futsalapp.ui.TeamFormationFragment;
+import com.nura.futsalapp.utils.DeviceInfo;
+import com.nura.futsalapp.viewpager.ViewPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerViewAdapter teamOneAdapter, teamTwoAdapter;
+    private static final String TAG = "MainActivity";
+    private ViewPager2 appViewPager;
+    private BottomNavigationView bottomNav ;
+    ViewPagerAdapter viewPagerAdapter;
 
-    private RecyclerView teamOneRecycler, teamTwoRecycler;
-
-    private TeamFormation teamFormation;
-    ArrayList<Player> teamOnePlayers, teamTwoPlayers;
-
-    private Button button;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        initFields();
-        setClicklistener();
+        setContentView(R.layout.app_view_pager);
+        try {
+            initFields();
+            viewPagerAdapter = new ViewPagerAdapter(this);
+            addFragments();
+            appViewPager.setAdapter(viewPagerAdapter);
+        } catch (Exception e) {
+            Log.e(TAG, "onCreate: " + e.getLocalizedMessage(), e);
+            e.printStackTrace();
+        }
     }
-
-
-    private void initTeamFormation() {
-
-        String forwards = "[\n" +
-                "    {\"name\": \"Lionel Messi\", \"rating\": 8, \"position\": \"ST\"},\n" +
-                "    {\"name\": \"Cristiano Ronaldo\", \"rating\": 8, \"position\": \"ST\"},\n" +
-                "    {\"name\": \"Neymar Jr\", \"rating\": 8, \"position\": \"ST\"},\n" +
-                "    {\"name\": \"Kylian Mbappe\", \"rating\": 7, \"position\": \"ST\"}\n" +
-                "]\n";
-
-        String midfields = "[\n" +
-                "    {\"name\": \"Kevin De Bruyne\", \"rating\": 8, \"position\": \"CMF\"},\n" +
-                "    {\"name\": \"Luka Modric\", \"rating\": 8, \"position\": \"CMF\"},\n" +
-                "    {\"name\": \"Paul Pogba\", \"rating\": 8, \"position\": \"CMF\"},\n" +
-                "    {\"name\": \"Toni Kroos\", \"rating\": 7, \"position\": \"CMF\"}\n" +
-                "]\n";
-
-        String defenders = "[\n" +
-                "    {\"name\": \"Virgil van Dijk\", \"rating\": 8, \"position\": \"CB\"},\n" +
-                "    {\"name\": \"Sergio Ramos\", \"rating\": 8, \"position\": \"CB\"},\n" +
-                "    {\"name\": \"Giorgio Chiellini\", \"rating\": 8, \"position\": \"CB\"},\n" +
-                "    {\"name\": \"Thiago Silva\", \"rating\": 7, \"position\": \"CB\"}\n" +
-                "]\n";
-
-
-        String goalkeepers = "[\n" +
-                "    {\"name\": \"David De Gea\", \"rating\": 7, \"position\": \"GK\"},\n" +
-                "    {\"name\": \"Manuel Neuer\", \"rating\": 7, \"position\": \"GK\"}\n" +
-                "]\n";
-
-        teamFormation = new TeamFormation();
-        teamFormation.addListPlayer(forwards);
-        teamFormation.makeTeam();
-        teamFormation.addListPlayer(midfields);
-        teamFormation.makeTeam();
-//        teamFormation.addListPlayer(defenders);
-//        teamFormation.makeTeam();
-//        teamFormation.addListPlayer(goalkeepers);
-//        teamFormation.makeTeam();
-    }
-
 
     private void initFields() {
-        button = findViewById(R.id.make_team);
-        teamOneRecycler = findViewById(R.id.team_one);
-        teamTwoRecycler = findViewById(R.id.team_two);
+        bottomNav = findViewById(R.id.bottomNav);
+        appViewPager = findViewById(R.id.app_view_pager);
     }
 
-    public void initTeamOne() {
-        teamOneAdapter = new RecyclerViewAdapter(teamFormation.getTeamOne());
-        teamOneRecycler.setAdapter(teamOneAdapter);
-        teamOneRecycler.setLayoutManager(new GridLayoutManager(this ,2));
+    private void utilsTest() {
+        DeviceInfo deviceInfo = new DeviceInfo();
+       String version =  deviceInfo.getAndroidVersion();
+        Log.d(TAG, "utilsTest: " + version);
 
     }
 
-    public void initTeamTwo() {
-
-        teamTwoAdapter = new RecyclerViewAdapter(teamFormation.getTeamTwo());
-        teamTwoRecycler.setAdapter(teamTwoAdapter);
-        teamTwoRecycler.setLayoutManager(new GridLayoutManager(this ,3));
+    private void addFragments(){
+        viewPagerAdapter.addFragments(new PlayerListFragment(this));
+        viewPagerAdapter.addFragments(new TeamFormationFragment(this));
     }
-
-
-    private void setClicklistener() {
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                initTeamFormation();
-                initTeamOne();
-                initTeamTwo();
-            }
-        });
-    }
-
 }

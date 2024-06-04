@@ -1,0 +1,11 @@
+
+}
+java:S1450"[Remove the "recyclerView" field and declare it as a local variable in the relevant methods.(¿á© ıÿÿÿÿ8ì£“ü1
+
+java:S1450"bRemove the "recyclerViewAdapter" field and declare it as a local variable in the relevant methods.(´çÌŸ8í£“ü1
+D
+java:S11852"(Remove this method to simply inherit it.(¥Ë©8¨Ÿ“ü1
+]	java:S125:"<This block of commented-out lines of code should be removed.(ÓÙ’ÿÿÿÿÿ8Àµ¡“ü1
+X	java:S125F"<This block of commented-out lines of code should be removed.(åùñ›8–¨Ÿ“ü1
+D
+java:S1068"'Remove this unused "TAG" private field.(£”¦Ù8÷£“ü1
