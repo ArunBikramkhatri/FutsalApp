@@ -1,21 +1,44 @@
 
-J
-java:S1604}"(Make this anonymous inner class a lambda(Êœüûÿÿÿÿ8ó’…ş1
-N
-java:S1659",Declare "teamTwoAdapter" on a separate line.(ÛæÁ’ûÿÿÿÿ8¦œ„ş1
-O
-java:S1659"-Declare "teamTwoRecycler" on a separate line.(‹çÉ—şÿÿÿÿ8¦œ„ş1
-N
-java:S1659",Declare "teamTwoPlayers" on a separate line.(À‡ëºşÿÿÿÿ8¦œ„ş1
-
-java:S1450"]Remove the "teamOneAdapter" field and declare it as a local variable in the relevant methods.(ÛæÁ’ûÿÿÿÿ8¦œ„ş1
-
-java:S1450"]Remove the "teamTwoAdapter" field and declare it as a local variable in the relevant methods.(ÛæÁ’ûÿÿÿÿ8¦œ„ş1
-D
-java:S1185("(Remove this method to simply inherit it.(¥Ë©8ˆ“…ş1
-]	java:S1256"<This block of commented-out lines of code should be removed.(€Ù’øÿÿÿÿ8’“…ş1
 K
-java:S1481O".Remove this unused "defenders" local variable.(çø‡¦8’“…ş1
+java:S1604—"(Make this anonymous inner class a lambda(Êœüûÿÿÿÿ8¸Œõ…€2
+q	java:S116'"VRename this field "team_one_p1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ¬ñt8ÔŒõ…€2
+r	java:S116("VRename this field "team_one_p2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(âì˜Å8ÔŒõ…€2
+r	java:S116)"VRename this field "team_one_p3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Å«ğŸ8ÔŒõ…€2
+w	java:S116*"VRename this field "team_one_p4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶Î½áıÿÿÿÿ8ÔŒõ…€2
+N
+java:S1659",Declare "teamTwoAdapter" on a separate line.(ÛæÁ’ûÿÿÿÿ8ÖŒõ…€2
+O
+java:S1659"-Declare "teamTwoRecycler" on a separate line.(‹çÉ—şÿÿÿÿ8×Œõ…€2
+N
+java:S1659!",Declare "teamTwoPlayers" on a separate line.(À‡ëºşÿÿÿÿ8×Œõ…€2
+|
+java:S1450%"_Remove the "formationBinding" field and declare it as a local variable in the relevant methods.(ÏŒ Ä8×Œõ…€2
+
+java:S1450"]Remove the "teamOneAdapter" field and declare it as a local variable in the relevant methods.(ÛæÁ’ûÿÿÿÿ8×Œõ…€2
+
+java:S1450"]Remove the "teamTwoAdapter" field and declare it as a local variable in the relevant methods.(ÛæÁ’ûÿÿÿÿ8×Œõ…€2
+v
+java:S1450'"ZRemove the "team_one_p1" field and declare it as a local variable in the relevant methods.(œ¬ñt8×Œõ…€2
+D
+java:S11853"(Remove this method to simply inherit it.(¥Ë©8ÙŒõ…€2
+X	java:S125?"<This block of commented-out lines of code should be removed.(™œÙĞ8ÛŒõ…€2
+]	java:S125E"<This block of commented-out lines of code should be removed.(Òì‰İúÿÿÿÿ8ÛŒõ…€2
+]	java:S125L"<This block of commented-out lines of code should be removed.(€Ù’øÿÿÿÿ8ÛŒõ…€2
+J
+java:S1481W"-Remove this unused "forwards" local variable.(Í–Ö8ÛŒõ…€2
+P
+java:S1481^".Remove this unused "midfields" local variable.(•İ·øÿÿÿÿ8ÛŒõ…€2
+K
+java:S1481e".Remove this unused "defenders" local variable.(çø‡¦8ÛŒõ…€2
 M
-java:S1481W"0Remove this unused "goalkeepers" local variable.(©Å¬8’“…ş1
-]	java:S125a"<This block of commented-out lines of code should be removed.(“ª‹ıÿÿÿÿ8““…ş1
+java:S1481m"0Remove this unused "goalkeepers" local variable.(©Å¬8ÜŒõ…€2
+]	java:S125r"<This block of commented-out lines of code should be removed.(“ª‹ıÿÿÿÿ8ÜŒõ…€2
+]	java:S125{"<This block of commented-out lines of code should be removed.(ôÑ‹Ñÿÿÿÿÿ8ÜŒõ…€2
+Y	java:S125€"<This block of commented-out lines of code should be removed.(­£Ÿ8ÜŒõ…€2
+Y	java:S125›"<This block of commented-out lines of code should be removed.(”è¨È8ŞŒõ…€2
+L
+java:S1068("/Remove this unused "team_one_p2" private field.(âì˜Å8ßŒõ…€2
+L
+java:S1068)"/Remove this unused "team_one_p3" private field.(Å«ğŸ8ßŒõ…€2
+Q
+java:S1068*"/Remove this unused "team_one_p4" private field.(¶Î½áıÿÿÿÿ8ßŒõ…€2

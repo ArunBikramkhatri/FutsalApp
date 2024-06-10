@@ -1,35 +1,36 @@
 
-g	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8·÷öÕù1
+g	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÕşÅ†€2
 v
-java:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").(š¶Öã8»÷öÕù1
+java:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").(š¶Öã8ÖşÅ†€2
+‰
+java:S1319"gThe type of "players" should be an interface such as "List" rather than the implementation "ArrayList".(ÅœŸîıÿÿÿÿ8×şÅ†€2
 ’
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ãÈÛğûÿÿÿÿ8¼÷öÕù1
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ãÈÛğûÿÿÿÿ8×şÅ†€2
 
-java:S1319 "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(º¨â”8¼÷öÕù1
+java:S1319 "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(º¨â”8ØşÅ†€2
 G
-java:S1659"%Declare "teamTwo" on a separate line.(äúíÙüÿÿÿÿ8Ì÷öÕù1
-c
-java:S1854;"ARemove this useless assignment to local variable "teamOneChoose".(ïÌ‘åøÿÿÿÿ8Ú÷öÕù1
-^
-java:S1854>"ARemove this useless assignment to local variable "teamTwoChoose".(ù›¤â8Ú÷öÕù1
-M
-java:S16599"+Declare "teamTwoChoose" on a separate line.( ­ûÿÿÿÿ8Ú÷öÕù1
-]	java:S1250"<This block of commented-out lines of code should be removed.(ãÕñ²ûÿÿÿÿ8Û÷öÕù1
+java:S1659"%Declare "teamTwo" on a separate line.(äúíÙüÿÿÿÿ8Ô‚Æ†€2
+]	java:S1251"<This block of commented-out lines of code should be removed.(ãÕñ²ûÿÿÿÿ8ß‚Æ†€2
 :
-java:S21196"Save and re-use this "Random".(¼İÅf8İ÷öÕù1
-T
-java:S14819"2Remove this unused "teamOneChoose" local variable.( ­ûÿÿÿÿ8Ş÷öÕù1
-T
-java:S14819"2Remove this unused "teamTwoChoose" local variable.( ­ûÿÿÿÿ8Ş÷öÕù1
-X	java:S125A"<This block of commented-out lines of code should be removed.(÷À¥³8à÷öÕù1
-L	java:S106F"+Replace this use of System.out by a logger.(§Ì¡æøÿÿÿÿ8á÷öÕù1
-]	java:S125L"<This block of commented-out lines of code should be removed.(Õí÷ğşÿÿÿÿ8â÷öÕù1
-]	java:S125S"<This block of commented-out lines of code should be removed.(Õüºãùÿÿÿÿ8â÷öÕù1
-G	java:S106U"+Replace this use of System.out by a logger.(œÎâ½8ã÷öÕù1
-X	java:S125X"<This block of commented-out lines of code should be removed.(ŠÄ©é8ã÷öÕù1
+java:S21197"Save and re-use this "Random".(¼İÅf8à‚Æ†€2
+F	java:S106A"+Replace this use of System.out by a logger.(ù¢¸X8ä‚Æ†€2
+G	java:S106E"+Replace this use of System.out by a logger.(Èœ¸8ê‚Æ†€2
+<
+java:S1659N"Declare "y" on a separate line.(äÛÁ”8â‚Æ†€2
+X	java:S125J"<This block of commented-out lines of code should be removed.(÷À¥³8ã‚Æ†€2
+X	java:S125J"<This block of commented-out lines of code should be removed.(÷À¥³8ã‚Æ†€2
+L	java:S106U"+Replace this use of System.out by a logger.(¾Îƒüÿÿÿÿ8Î½Í†€2
+]	java:S125Y"<This block of commented-out lines of code should be removed.(Õí÷ğşÿÿÿÿ8è‚Æ†€2
+]	java:S125`"<This block of commented-out lines of code should be removed.(Õüºãùÿÿÿÿ8è‚Æ†€2
+L	java:S106f"+Replace this use of System.out by a logger.(¸ÆÙÙÿÿÿÿÿ8Ï½Í†€2
+X	java:S125i"<This block of commented-out lines of code should be removed.(ŠÄ©é8ì‚Æ†€2
+`
+java:S1155s">Use isEmpty() to check whether the collection is empty or not.(ÆôŞÙûÿÿÿÿ8ğ‚Æ†€2
+Z
+java:S1155w">Use isEmpty() to check whether the collection is empty or not.(–¡À8ñ‚Æ†€2
 U
-java:S1128"3Remove this unused import 'org.json.JSONException'.(¹Ó·úÿÿÿÿ8êáÒêû1
+java:S1128"3Remove this unused import 'org.json.JSONException'.(¹Ó·úÿÿÿÿ8Ë‘Ò†€2
 Q
-java:S1068"/Remove this unused "teamDetails" private field.(¾½à·ùÿÿÿÿ8ØğøÕù1
+java:S1068"/Remove this unused "teamDetails" private field.(¾½à·ùÿÿÿÿ8ò‚Æ†€2
 F
-java:S1068")Remove this unused "teams" private field.(Öïö‹8ä÷öÕù1
+java:S1068")Remove this unused "teams" private field.(Öïö‹8ò‚Æ†€2

@@ -1,0 +1,9 @@
+
+
+java:S1319"pThe type of "fixtureArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(Ë…—ù8£½Ìêş1
+{
+java:S1450"^Remove the "fixturesAdapter" field and declare it as a local variable in the relevant methods.(Çï·8§ÛÎêş1
+|
+java:S1450"_Remove the "fixturesRecycler" field and declare it as a local variable in the relevant methods.(çœ³‘8­½Ìêş1
+D
+java:S1185#"(Remove this method to simply inherit it.(¥Ë©8®½Ìêş1

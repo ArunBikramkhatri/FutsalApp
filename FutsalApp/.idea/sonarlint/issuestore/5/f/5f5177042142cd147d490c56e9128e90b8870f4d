@@ -1,6 +1,0 @@
-
-‘
-java:S1319"oThe type of "playerArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ª¯òºûÿÿÿÿ8Ú§·êû1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñýÿÿÿÿ8Û§·êû1
-m
-java:S16596"KDeclare "playerPosition" and all following declarations on a separate line.(Å†¦’úÿÿÿÿ8ü§·êû1

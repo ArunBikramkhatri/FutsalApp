@@ -47,7 +47,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public void onBindViewHolder(@NonNull ViewHolder holder, @SuppressLint("RecyclerView") int position) {
         Log.d(TAG, "onBindViewHolder: ");
         holder.playerName.setText(playerArrayList.get(position).getName());
-
         holder.playerCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,6 +76,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             super(itemView);
             playerName = itemView.findViewById(R.id.player_card_name);
             playerCard = itemView.findViewById(R.id.player_card);
+            imageView = itemView.findViewById(R.id.player_img);
 //            playerRating = itemView.findViewById(R.id.player_rating);
 //            playerPosition = itemView.findViewById(R.id.player_position);
         }

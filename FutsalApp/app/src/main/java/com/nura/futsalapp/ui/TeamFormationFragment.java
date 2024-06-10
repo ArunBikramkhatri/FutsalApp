@@ -12,8 +12,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.nura.futsalapp.R;
+import com.nura.futsalapp.databinding.FragmentTeamFormationBinding;
+import com.nura.futsalapp.databinding.PlayerCardBinding;
 import com.nura.futsalapp.model.Player;
 import com.nura.futsalapp.model.TeamFormation;
 import com.nura.futsalapp.recyclerViewAdapter.RecyclerViewAdapter;
@@ -31,6 +34,14 @@ public class TeamFormationFragment extends Fragment {
 
     private Button button;
 
+    private FragmentTeamFormationBinding formationBinding;
+
+    private PlayerCardBinding team_one_p1;
+    private View team_one_p2;
+    private View team_one_p3;
+    private View team_one_p4 ;
+
+
     Activity activity;
     public TeamFormationFragment(Activity activity){
         this.activity =activity ;
@@ -44,10 +55,21 @@ public class TeamFormationFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.team_formation , container, false);
-        initFields(view);
+        formationBinding = FragmentTeamFormationBinding.inflate(getLayoutInflater());
+        View view = formationBinding.getRoot();
+        initFields(formationBinding);
         setClicklistener();
         return view;
+//        View view = inflater.inflate(R.layout.fragment_team_formation,container ,false);
+//        initFields(view);
+//        setClicklistener();
+//        return  view;
+
+
+//        View view = inflater.inflate(R.layout.team_formation , container, false);
+//        initFields(view);
+//        setClicklistener();
+//        return view;
     }
 
 //    @Override
@@ -89,11 +111,6 @@ public class TeamFormationFragment extends Fragment {
                 "    {\"name\": \"Manuel Neuer\", \"rating\": 7, \"position\": \"GK\"}\n" +
                 "]\n";
 
-        teamFormation = new TeamFormation();
-        teamFormation.addListPlayer(forwards);
-        teamFormation.makeTeam();
-        teamFormation.addListPlayer(midfields);
-        teamFormation.makeTeam();
 //        teamFormation.addListPlayer(defenders);
 //        teamFormation.makeTeam();
 //        teamFormation.addListPlayer(goalkeepers);
@@ -101,13 +118,22 @@ public class TeamFormationFragment extends Fragment {
     }
 
 
-    private void initFields(View view) {
-        button = view.findViewById(R.id.make_team);
-        teamOneRecycler = view.findViewById(R.id.team_one);
-        teamTwoRecycler = view.findViewById(R.id.team_two);
-    }
+    private void initFields(FragmentTeamFormationBinding view) {
+        team_one_p1 = view.teamOneP1;
+//        team_one_p2 = view.findViewById(R.id.team_one_p2);
+//        team_one_p3 = view.findViewById(R.id.team_one_p3);
+//        team_one_p4 = view.findViewById(R.id.team_one_p4);
+
+        button = view.makeTeam;
+//        teamOneRecycler = view.findViewById(R.id.team_one);
+//        teamTwoRecycler = view.findViewById(R.id.team_two);
+
+       team_one_p1.playerCardName.setText("Player 1");}
 
     public void initTeamOne() {
+
+
+
         teamOneAdapter = new RecyclerViewAdapter(teamFormation.getTeamOne());
         teamOneRecycler.setAdapter(teamOneAdapter);
         teamOneRecycler.setLayoutManager(new GridLayoutManager(activity ,2));
@@ -126,8 +152,8 @@ public class TeamFormationFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 initTeamFormation();
-                initTeamOne();
-                initTeamTwo();
+//                initTeamOne();
+//                initTeamTwo();
             }
         });
     }

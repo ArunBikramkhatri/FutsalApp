@@ -3,14 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item android:id="@+id/btm_home"
-        android:title="Fixtures"
+        android:title=""
         android:icon="@drawable/fixtures"></item>
 
     <item android:id="@+id/btm_player"
-        android:title="Match"
+        android:title=""
         android:icon="@drawable/home"></item>
 
     <item android:id="@+id/btm_game"
-        android:title="Players"
+        android:title=""
         android:icon="@drawable/players"></item>
+
+<!--    <item android:id="@+id/btm_home"-->
+<!--        android:title="Fixture"-->
+<!--       ></item>-->
+
+<!--    <item android:id="@+id/btm_player"-->
+<!--        android:title="Match"-->
+<!--        ></item>-->
+
+<!--    <item android:id="@+id/btm_game"-->
+<!--        android:title="Players"-->
+<!--        ></item>-->
 </menu>

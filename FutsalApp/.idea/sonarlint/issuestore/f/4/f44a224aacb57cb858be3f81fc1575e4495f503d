@@ -1,0 +1,39 @@
+
+i
+java:S1192"GDefine a constant instead of duplicating this literal "    {
+" 8 times.(Ÿñ¼Ñÿÿÿÿÿ8â¾ùˆÿ1
+{
+java:S1192
+"^Define a constant instead of duplicating this literal "      \"matches_played\": 2,
+" 6 times.(¶Òî©8â¾ùˆÿ1
+v
+java:S1192I"TDefine a constant instead of duplicating this literal "      \"loss\": 2,
+" 3 times.(Ø×Ùûùÿÿÿÿ8øžƒ‰ÿ1
+q
+java:S1192"TDefine a constant instead of duplicating this literal "      \"loss\": 1,
+" 3 times.(Ù–“¾8øžƒ‰ÿ1
+p
+java:S1192"TDefine a constant instead of duplicating this literal "      \"draw\": 0,
+" 8 times.(‡ÒÇ8â¾ùˆÿ1
+u
+java:S1192"SDefine a constant instead of duplicating this literal "      \"win\": 2,
+" 4 times.(ë­‘†þÿÿÿÿ8â¾ùˆÿ1
+o
+java:S1192G"SDefine a constant instead of duplicating this literal "      \"win\": 0,
+" 3 times.(ªµé8øžƒ‰ÿ1
+e
+java:S1192"HDefine a constant instead of duplicating this literal "    },
+" 7 times.(¥ÁÊÁ8ã¾ùˆÿ1
+w
+java:S1192"UDefine a constant instead of duplicating this literal "      \"points\": 6
+" 4 times.(‘Àæ´øÿÿÿÿ8ã¾ùˆÿ1
+y
+java:S1192"WDefine a constant instead of duplicating this literal "      \"logo\": \"\",
+" 8 times.(¾Ìˆ’üÿÿÿÿ8ã¾ùˆÿ1
+q
+java:S1192M"UDefine a constant instead of duplicating this literal "      \"points\": 0
+" 3 times.(–„¬C8ùžƒ‰ÿ1
+5
+java:S1700"Rename field "tableData"(¶–¥ÿ8í‚øˆÿ1
+\
+java:S1118":Add a private constructor to hide the implicit public one.(Åþáûûÿÿÿÿ8ð‚øˆÿ1

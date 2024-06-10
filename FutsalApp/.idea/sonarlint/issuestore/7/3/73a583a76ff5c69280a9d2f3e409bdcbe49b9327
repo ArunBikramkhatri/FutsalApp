@@ -1,5 +1,17 @@
 
 z
-java:S1450"XRemove the "bottomNav" field and declare it as a local variable in the relevant methods.(˜Úð£øÿÿÿÿ8ÁééŽþ1
+java:S1450 "XRemove the "bottomNav" field and declare it as a local variable in the relevant methods.(˜Úð£øÿÿÿÿ8‹¸®…€2
+z
+java:S1450$"]Remove the "playingPlayers" field and declare it as a local variable in the relevant methods.(öë¯’8¬û®…€2
+O
+java:S1481^"2Remove this unused "teamFormation" local variable.(ž«ÿ‚8Òüú…€2
+H
+java:S1068%",Remove this unused "fixtures" private field.(Ýäî@8–¸®…€2
+P
+java:S1068'"3Remove this unused "fixturesAdapter" private field.(Çïž·8–¸®…€2
+O
+java:S1068)"2Remove this unused "mainOperations" private field.(ßÂÿË8–¸®…€2
 K
-java:S1144+".Remove this unused private "utilsTest" method.(‘òí»8ÛžìŽþ1
+java:S1144B".Remove this unused private "utilsTest" method.(‘òí»8–¸®…€2
+Y
+java:S1144["7Remove this unused private "initPlayingPlayers" method.(‚ÐÙ×þÿÿÿÿ8–¸®…€2

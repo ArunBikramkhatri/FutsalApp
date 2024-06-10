@@ -1,0 +1,10 @@
+
+‘
+java:S1319"oThe type of "playerArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ùÅÓşÿÿÿÿÿ8¨¸Î¿ş1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8ª¸Î¿ş1
+w	java:S1168"VRename this field "player_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8ú‘Ï¿ş1
+{	java:S1168"ZRename this field "player_position" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8¬ÅÏ¿ş1
+y	java:S1168"XRename this field "player_rating" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8˜ùÏ¿ş1
+{	java:S1169"ZRename this field "player_list_img" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Æœ§ÿÿÿÿÿ8¾¸Î¿ş1
+n
+java:S16598"LDeclare "player_position" and all following declarations on a separate line.(³ÖÈÁıÿÿÿÿ8­ÅÏ¿ş1

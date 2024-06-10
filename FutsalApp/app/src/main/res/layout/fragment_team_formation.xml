@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.TeamFormationFragment">
+    <ImageView
+        android:id="@+id/field"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:scaleType="fitXY"
+        android:src="@drawable/footballfield"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"></ImageView>
+
+
+    <!--    <include-->
+<!--        layout="@layout/player_card"-->
+<!--        android:id="@+id/keeperOne"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        ></include>-->
+
+
+<!--    <include-->
+<!--        android:id="@+id/keeperTwo"-->
+<!--        layout="@layout/player_card"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/field" />-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/test_team_one"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.48"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.91"
+        tools:ignore="MissingConstraints">
+
+
+        <include
+            android:id="@+id/keeperOne"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.06"></include>
+
+        <include
+            android:id="@+id/team_one_p1"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/team_one_p4"
+            app:layout_constraintTop_toBottomOf="@+id/keeperOne"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="151dp"></include>
+
+        <include
+            android:id="@+id/team_one_p2"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintStart_toEndOf="@+id/team_one_p1"
+            tools:layout_editor_absoluteY="188dp"></include>
+
+        <include
+            android:id="@+id/team_one_p3"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            app:layout_constraintBottom_toBottomOf="@+id/team_one_p2"
+            app:layout_constraintEnd_toStartOf="@+id/team_one_p1"
+            app:layout_constraintHorizontal_bias="0.313"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/team_one_p2"
+            app:layout_constraintVertical_bias="0.0"></include>
+
+        <include
+            android:id="@+id/team_one_p4"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/team_one_p2"
+            app:layout_constraintVertical_bias="0.194"
+            tools:layout_editor_absoluteX="151dp"></include>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/test_team_two"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test_team_one"
+        app:layout_constraintWidth_percent="0.91"
+        tools:ignore="MissingConstraints">
+
+
+        <include
+            android:id="@+id/keeperTwo"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"></include>
+
+        <include
+            android:id="@+id/team_two_p1"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/team_two_p3"
+            app:layout_constraintTop_toTopOf="@+id/team_two_p3"></include>
+
+        <include
+            android:id="@+id/team_two_p3"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/team_two_p4"
+            app:layout_constraintEnd_toStartOf="@+id/team_two_p1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"></include>
+
+        <include
+            android:id="@+id/team_two_p2"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/team_two_p4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/team_two_p4"></include>
+
+        <include
+            android:id="@+id/team_two_p4"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/keeperTwo"
+            app:layout_constraintEnd_toStartOf="@+id/team_two_p2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"></include>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/make_team"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="646dp"></Button>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

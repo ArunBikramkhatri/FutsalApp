@@ -1,13 +1,13 @@
 
 Œ
-java:S1319"oThe type of "playerArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ë³üé8ÈÀ¥Áû1
+java:S1319"oThe type of "playerArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ë³üé8™Ïæ’ş1
 E
-java:S16043"(Make this anonymous inner class a lambda(ú€´Ö8ÉÀ¥Áû1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8ËÀ¥Áû1
+java:S16042"(Make this anonymous inner class a lambda(ú€´Ö8›Ïæ’ş1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8ŸÏæ’ş1
 y
-java:S1450"WRemove the "activity" field and declare it as a local variable in the relevant methods.(‰€Ôßûÿÿÿÿ8ÿîåÂû1
-]	java:S125P"<This block of commented-out lines of code should be removed.(°º°ìûÿÿÿÿ8ëç©Áû1
+java:S1450"WRemove the "activity" field and declare it as a local variable in the relevant methods.(‰€Ôßûÿÿÿÿ8«Ïæ’ş1
+]	java:S125P"<This block of commented-out lines of code should be removed.(°º°ìûÿÿÿÿ8¿Ïæ’ş1
 N
-java:S1068",Remove this unused "activity" private field.(‰€Ôßûÿÿÿÿ8ŠïåÂû1
+java:S1068",Remove this unused "activity" private field.(‰€Ôßûÿÿÿÿ8ÀÏæ’ş1
 J
-java:S1068I"-Remove this unused "imageView" private field.(øû¯8ìç©Áû1
+java:S1068H"-Remove this unused "imageView" private field.(øû¯8½®ç’ş1

@@ -1,0 +1,32 @@
+{
+  "fixtures": [
+    {"player_one": "Nabin Thapa", "player_two": "Manish Shakya", "status": "11-4"},
+    {"player_one": "Nabin Bogati", "player_two": "Ajit Bhattrai", "status": "4-10"},
+    {"player_one": "Sujan Shakya", "player_two": "Mahesh Khanal", "status": "6-13"},
+    {"player_one": "Rusum Shrestha", "player_two": "Upendra Thapa", "status": "8-2"},
+    {"player_one": "Ajit Bhattrai", "player_two": "Nabin Thapa", "status": "9-21"},
+    {"player_one": "Upendra Thapa", "player_two": "Nabin Bogati", "status": "10-8"},
+    {"player_one": "Mahesh Khanal", "player_two": "Manish Shakya", "status": "8-7"},
+    {"player_one": "Ajit Bhattrai", "player_two": "Rusum Shrestha", "status": "8-5"},
+    {"player_one": "Sujan Shakya", "player_two": "Rusum Shrestha", "status": "4-11"},
+    {"player_one": "Nabin Thapa", "player_two": "Mahesh Khanal", "status": "match-remaining"},
+    {"player_one": "Manish Shakya", "player_two": "Sujan Shakya", "status": "match-remaining"},
+    {"player_one": "Nabin Bogati", "player_two": "Sujan Shakya", "status": "match-remaining"},
+    {"player_one": "Upendra Thapa", "player_two": "Nabin Thapa", "status": "match-remaining"},
+    {"player_one": "Mahesh Khanal", "player_two": "Rusum Shrestha", "status": "match-remaining"},
+    {"player_one": "Ajit Bhattrai", "player_two": "Sujan Shakya", "status": "match-remaining"},
+    {"player_one": "Manish Shakya", "player_two": "Nabin Bogati", "status": "match-remaining"},
+    {"player_one": "Nabin Thapa", "player_two": "Rusum Shrestha", "status": "match-remaining"},
+    {"player_one": "Sujan Shakya", "player_two": "Upendra Thapa", "status": "match-remaining"},
+    {"player_one": "Mahesh Khanal", "player_two": "Nabin Bogati", "status": "match-remaining"},
+    {"player_one": "Ajit Bhattrai", "player_two": "Manish Shakya", "status": "match-remaining"},
+    {"player_one": "Nabin Thapa", "player_two": "Sujan Shakya", "status": "match-remaining"},
+    {"player_one": "Nabin Bogati", "player_two": "Rusum Shrestha", "status": "match-remaining"},
+    {"player_one": "Manish Shakya", "player_two": "Upendra Thapa", "status": "match-remaining"},
+    {"player_one": "Ajit Bhattrai", "player_two": "Mahesh Khanal", "status": "match-remaining"},
+    {"player_one": "Nabin Thapa", "player_two": "Nabin Bogati", "status": "match-remaining"},
+    {"player_one": "Rusum Shrestha", "player_two": "Manish Shakya", "status": "match-remaining"},
+    {"player_one": "Ajit Bhattrai", "player_two": "Upendra Thapa", "status": "match-remaining"},
+    {"player_one": "Mahesh Khanal", "player_two": "Upendra Thapa", "status": "match-remaining"}
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "players": [
+    {
+      "name": "Nabin Thapa",
+      "nickName": "NABIN",
+      "rating": "7z",
+      "position": "ST",
+      "jerseyNumber": "10"
+    },
+    {
+      "name": "Ajit Bhattrai",
+      "nickName": "AJIT",
+      "rating": "8",
+      "position": "CAM",
+      "jerseyNumber": "8"
+    },
+    {
+      "name": "Updendra Thapa",
+      "nickName": "UPENDRA",
+      "rating": "6",
+      "position": "DF",
+      "jerseyNumber": "4"
+    },
+    {
+      "name": "Showan Rai",
+      "nickName": "SHOWAN",
+      "rating": "5",
+      "position": "GK",
+      "jerseyNumber": "01"
+    },
+    {
+      "name": "Anish Upadhyay",
+      "nickName": "ANI-SH",
+      "rating": "8",
+      "position": "ST",
+      "jerseyNumber": "30"
+    },
+    {
+      "name": "Jagadish Parajuli",
+      "nickName": "JAGADISH",
+      "rating": "7",
+      "position": "CAM",
+      "jerseyNumber": "19"
+    },
+    {
+      "name": "Jenish Parajuli",
+      "nickName": "JENISH",
+      "rating": "5",
+      "position": "DF",
+      "jerseyNumber": "99"
+    },
+    {
+      "name": "Mahesh Khanal",
+      "nickName": "MAHESH",
+      "rating": "6",
+      "position": "GK",
+      "jerseyNumber": "9"
+    },
+    {
+      "name": "Arun Bikram Khatri",
+      "nickName": "ARUN",
+      "rating": "7",
+      "position": "ST",
+      "jerseyNumber": "70"
+    },
+    {
+      "name": "Praveen Shrestha",
+      "nickName": "VEEN",
+      "rating": "6",
+      "position": "CAM",
+      "jerseyNumber": "11"
+    },
+    {
+      "name": "Rusum Shrestha",
+      "nickName": "M EVE R",
+      "rating": "5",
+      "position": "DF",
+      "jerseyNumber": "14"
+    },
+    {
+      "name": "Sujan Shakya",
+      "nickName": "SUJAN",
+      "rating": "7",
+      "position": "GK",
+      "jerseyNumber": "7"
+    },
+    {
+      "name": "Manish Shakya",
+      "nickName": "MANISH",
+      "rating": "6",
+      "position": "ST",
+      "jerseyNumber": "5"
+    },
+    {
+      "name": "Sudip Tamang",
+      "nickName": "SUDIP",
+      "rating": "4",
+      "position": "CAM",
+      "jerseyNumber": "0"
+    },
+    {
+      "name": "Sumanta Paudel",
+      "nickName": "SUMANTA",
+      "rating": "6",
+      "position": "DF",
+      "jerseyNumber": "22"
+    },
+    {
+      "name": "Nabin Bogati",
+      "nickName": "BOGATI",
+      "rating": "5",
+      "position": "GK",
+      "jerseyNumber": "2"
+    },
+    {
+      "name": "Samar Shrestha",
+      "nickName": "SUMMER",
+      "rating": "8",
+      "position": "ST",
+      "jerseyNumber": "17"
+    },
+    {
+      "name": "Ashwin Belbase",
+      "nickName": "ASHWIN",
+      "rating": "7",
+      "position": "DF",
+      "jerseyNumber": "[06]"
+    },
+    {
+      "name": "Anil Kumar Thapa",
+      "nickName": "ANIL",
+      "rating": "6",
+      "position": "GK",
+      "jerseyNumber": "28"
+    }
+  ]
+}
