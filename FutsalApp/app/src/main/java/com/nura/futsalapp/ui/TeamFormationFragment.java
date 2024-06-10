@@ -8,16 +8,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
-import com.nura.futsalapp.R;
+import com.nura.futsalapp.MainActivity;
 import com.nura.futsalapp.databinding.FragmentTeamFormationBinding;
 import com.nura.futsalapp.databinding.PlayerCardBinding;
 import com.nura.futsalapp.model.Player;
+import com.nura.futsalapp.model.PlayersList;
 import com.nura.futsalapp.model.TeamFormation;
 import com.nura.futsalapp.recyclerViewAdapter.RecyclerViewAdapter;
 
@@ -25,10 +26,12 @@ import java.util.ArrayList;
 
 public class TeamFormationFragment extends Fragment {
 
+    private static final String TAG = "TeamFormationFragment";
     private RecyclerViewAdapter teamOneAdapter, teamTwoAdapter;
 
     private RecyclerView teamOneRecycler, teamTwoRecycler;
 
+    private PlayersList players;
     private TeamFormation teamFormation;
     ArrayList<Player> teamOnePlayers, teamTwoPlayers;
 
@@ -36,15 +39,30 @@ public class TeamFormationFragment extends Fragment {
 
     private FragmentTeamFormationBinding formationBinding;
 
-    private PlayerCardBinding team_one_p1;
-    private View team_one_p2;
-    private View team_one_p3;
-    private View team_one_p4 ;
+    private PlayerCardBinding team_one_p1,team_one_p2,team_one_p3,team_one_p4;
+    private PlayerCardBinding team_two_p1,team_two_p2,team_two_p3,team_two_p4;
 
 
     Activity activity;
-    public TeamFormationFragment(Activity activity){
-        this.activity =activity ;
+
+    public TeamFormationFragment(Activity activity, PlayersList players) {
+        this.activity = activity;
+        players.sort();
+        this.players = players;
+
+    }
+
+    private void createTeams() {
+        teamFormation = new TeamFormation(new ArrayList<>(players.getPlayers()));
+        Log.d(TAG, "createTeams: " + players.toString());
+        if (players.getPlayers().size() >= 8) {
+            teamFormation.createTeam();
+        }else {
+            Log.d(TAG, "createTeams: players numbers is less than 8" );
+        }
+        teamOnePlayers = teamFormation.getTeamOne();
+        teamTwoPlayers = teamFormation.getTeamTwo();
+
     }
 
     @Override
@@ -58,7 +76,7 @@ public class TeamFormationFragment extends Fragment {
         formationBinding = FragmentTeamFormationBinding.inflate(getLayoutInflater());
         View view = formationBinding.getRoot();
         initFields(formationBinding);
-        setClicklistener();
+        setClicklistener(view);
         return view;
 //        View view = inflater.inflate(R.layout.fragment_team_formation,container ,false);
 //        initFields(view);
@@ -120,6 +138,14 @@ public class TeamFormationFragment extends Fragment {
 
     private void initFields(FragmentTeamFormationBinding view) {
         team_one_p1 = view.teamOneP1;
+        team_one_p2 = view.teamOneP2;
+        team_one_p3 = view.teamOneP3;
+        team_one_p4 = view.teamOneP4;
+
+        team_two_p1 = view.teamTwoP1;
+        team_two_p2 = view.teamTwoP2;
+        team_two_p3 = view.teamTwoP3;
+        team_two_p4 = view.teamTwoP4;
 //        team_one_p2 = view.findViewById(R.id.team_one_p2);
 //        team_one_p3 = view.findViewById(R.id.team_one_p3);
 //        team_one_p4 = view.findViewById(R.id.team_one_p4);
@@ -127,35 +153,61 @@ public class TeamFormationFragment extends Fragment {
         button = view.makeTeam;
 //        teamOneRecycler = view.findViewById(R.id.team_one);
 //        teamTwoRecycler = view.findViewById(R.id.team_two);
-
-       team_one_p1.playerCardName.setText("Player 1");}
+    }
 
     public void initTeamOne() {
 
 
-
         teamOneAdapter = new RecyclerViewAdapter(teamFormation.getTeamOne());
         teamOneRecycler.setAdapter(teamOneAdapter);
-        teamOneRecycler.setLayoutManager(new GridLayoutManager(activity ,2));
+        teamOneRecycler.setLayoutManager(new GridLayoutManager(activity, 2));
 
     }
 
     public void initTeamTwo() {
         teamTwoAdapter = new RecyclerViewAdapter(teamFormation.getTeamTwo());
         teamTwoRecycler.setAdapter(teamTwoAdapter);
-        teamTwoRecycler.setLayoutManager(new GridLayoutManager(activity ,3));
+        teamTwoRecycler.setLayoutManager(new GridLayoutManager(activity, 3));
     }
 
 
-    private void setClicklistener() {
+    private void setClicklistener(View view) {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                initTeamFormation();
+                createTeams();
+                setField();
+//                initTeamFormation();
 //                initTeamOne();
 //                initTeamTwo();
             }
         });
+    }
+
+    private void setField(){
+        team_one_p1.playerCardName.setText(teamOnePlayers.get(0).getNickName());
+        team_one_p1.playerImg.setImageResource(teamOnePlayers.get(0).getImageResId());
+
+        team_one_p2.playerCardName.setText(teamOnePlayers.get(1).getNickName());
+        team_one_p2.playerImg.setImageResource(teamOnePlayers.get(1).getImageResId());
+
+        team_one_p3.playerCardName.setText(teamOnePlayers.get(2).getNickName());
+        team_one_p3.playerImg.setImageResource(teamOnePlayers.get(2).getImageResId());
+
+        team_one_p4.playerCardName.setText(teamOnePlayers.get(3).getNickName());
+        team_one_p4.playerImg.setImageResource(teamOnePlayers.get(3).getImageResId());
+
+        team_two_p1.playerCardName.setText(teamTwoPlayers.get(0).getNickName());
+        team_two_p1.playerImg.setImageResource(teamTwoPlayers.get(0).getImageResId());
+
+        team_two_p2.playerCardName.setText(teamTwoPlayers.get(1).getNickName());
+        team_two_p2.playerImg.setImageResource(teamTwoPlayers.get(1).getImageResId());
+
+        team_two_p3.playerCardName.setText(teamTwoPlayers.get(2).getNickName());
+        team_two_p3.playerImg.setImageResource(teamTwoPlayers.get(2).getImageResId());
+
+        team_two_p4.playerCardName.setText(teamTwoPlayers.get(3).getNickName());
+        team_two_p4.playerImg.setImageResource(teamTwoPlayers.get(3).getImageResId());
     }
 
 }

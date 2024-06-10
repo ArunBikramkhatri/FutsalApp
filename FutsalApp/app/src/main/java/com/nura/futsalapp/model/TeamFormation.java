@@ -33,17 +33,6 @@ public class TeamFormation {
         return teamTwo;
     }
 
-    public void addListPlayer(String jsonPlayer) {
-
-        Player[] players;
-        try {
-            ObjectMapper objectMapper = new ObjectMapper();
-            players = objectMapper.readValue(jsonPlayer, Player[].class);
-            playerArrayList = new ArrayList<Player>(Arrays.asList(players));
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     public void makeTeam(int range) {
 //        int totalWeight = 0;

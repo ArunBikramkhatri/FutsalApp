@@ -6,7 +6,7 @@ public class PlayerData {
             "    {\n" +
             "      \"name\": \"Nabin Thapa\",\n" +
             "      \"nickName\": \"NABIN\",\n" +
-            "      \"rating\": 7,\n" +
+            "      \"rating\": 9,\n" +
             "      \"position\": \"ST\",\n" +
             "      \"jerseyNumber\": \"10\"\n" +
             "    },\n" +
@@ -18,7 +18,7 @@ public class PlayerData {
             "      \"jerseyNumber\": \"8\"\n" +
             "    },\n" +
             "    {\n" +
-            "      \"name\": \"Updendra Thapa\",\n" +
+            "      \"name\": \"Upendra Thapa\",\n" +
             "      \"nickName\": \"UPENDRA\",\n" +
             "      \"rating\": 6,\n" +
             "      \"position\": \"DF\",\n" +
@@ -33,8 +33,8 @@ public class PlayerData {
             "    },\n" +
             "    {\n" +
             "      \"name\": \"Anish Upadhyay\",\n" +
-            "      \"nickName\": \"ANI-SH\",\n" +
-            "      \"rating\": 8,\n" +
+            "      \"nickName\": \"ANISH\",\n" +
+            "      \"rating\": 6,\n" +
             "      \"position\": \"ST\",\n" +
             "      \"jerseyNumber\": \"30\"\n" +
             "    },\n" +
@@ -46,9 +46,9 @@ public class PlayerData {
             "      \"jerseyNumber\": \"19\"\n" +
             "    },\n" +
             "    {\n" +
-            "      \"name\": \"Jenish Parajuli\",\n" +
+            "      \"name\": \"Jenish Shakya\",\n" +
             "      \"nickName\": \"JENISH\",\n" +
-            "      \"rating\": 5,\n" +
+            "      \"rating\": 7,\n" +
             "      \"position\": \"DF\",\n" +
             "      \"jerseyNumber\": \"99\"\n" +
             "    },\n" +
@@ -75,15 +75,15 @@ public class PlayerData {
             "    },\n" +
             "    {\n" +
             "      \"name\": \"Rusum Shrestha\",\n" +
-            "      \"nickName\": \"M EVE R\",\n" +
-            "      \"rating\": 5,\n" +
+            "      \"nickName\": \"MEVER\",\n" +
+            "      \"rating\": 7,\n" +
             "      \"position\": \"DF\",\n" +
             "      \"jerseyNumber\": \"14\"\n" +
             "    },\n" +
             "    {\n" +
             "      \"name\": \"Sujan Shakya\",\n" +
             "      \"nickName\": \"SUJAN\",\n" +
-            "      \"rating\": 7,\n" +
+            "      \"rating\": 6,\n" +
             "      \"position\": \"GK\",\n" +
             "      \"jerseyNumber\": \"7\"\n" +
             "    },\n" +
@@ -125,7 +125,7 @@ public class PlayerData {
             "    {\n" +
             "      \"name\": \"Ashwin Belbase\",\n" +
             "      \"nickName\": \"ASHWIN\",\n" +
-            "      \"rating\": 7,\n" +
+            "      \"rating\": 6,\n" +
             "      \"position\": \"DF\",\n" +
             "      \"jerseyNumber\": \"06\"\n" +
             "    },\n" +

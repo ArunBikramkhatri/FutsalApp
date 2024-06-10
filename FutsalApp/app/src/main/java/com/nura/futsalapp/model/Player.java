@@ -78,7 +78,7 @@ public class Player {
     public void resolveImageResId(Context context) {
         if (name != null) {
             String imageName = name.toLowerCase(); // Assuming the drawable resource names are in lowercase
-            imageResId = context.getResources().getIdentifier("arun", "drawable", context.getPackageName());
+            imageResId = context.getResources().getIdentifier(getNickName().toLowerCase(), "drawable", context.getPackageName());
             if (imageResId == 0) {
                 Log.e(TAG, "Image resource not found for name: " + imageName);
             }

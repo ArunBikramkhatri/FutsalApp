@@ -1,7 +1,4 @@
 
-g	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ÕşÅ†€2
-v
-java:S2293*"YReplace the type specification in this constructor call with the diamond operator ("<>").(š¶Öã8ÖşÅ†€2
 ‰
 java:S1319"gThe type of "players" should be an interface such as "List" rather than the implementation "ArrayList".(ÅœŸîıÿÿÿÿ8×şÅ†€2
 ’
@@ -10,26 +7,30 @@ java:S1319"pThe return type of this method should be an interface such as "Lis
 java:S1319 "pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(º¨â”8ØşÅ†€2
 G
 java:S1659"%Declare "teamTwo" on a separate line.(äúíÙüÿÿÿÿ8Ô‚Æ†€2
-]	java:S1251"<This block of commented-out lines of code should be removed.(ãÕñ²ûÿÿÿÿ8ß‚Æ†€2
+]	java:S125&"<This block of commented-out lines of code should be removed.(ãÕñ²ûÿÿÿÿ8ß‚Æ†€2
 :
-java:S21197"Save and re-use this "Random".(¼İÅf8à‚Æ†€2
-F	java:S106A"+Replace this use of System.out by a logger.(ù¢¸X8ä‚Æ†€2
-G	java:S106E"+Replace this use of System.out by a logger.(Èœ¸8ê‚Æ†€2
+java:S2119,"Save and re-use this "Random".(¼İÅf8à‚Æ†€2
+F	java:S1066"+Replace this use of System.out by a logger.(ù¢¸X8ä‚Æ†€2
+G	java:S106:"+Replace this use of System.out by a logger.(Èœ¸8ê‚Æ†€2
 <
-java:S1659N"Declare "y" on a separate line.(äÛÁ”8â‚Æ†€2
-X	java:S125J"<This block of commented-out lines of code should be removed.(÷À¥³8ã‚Æ†€2
-X	java:S125J"<This block of commented-out lines of code should be removed.(÷À¥³8ã‚Æ†€2
-L	java:S106U"+Replace this use of System.out by a logger.(¾Îƒüÿÿÿÿ8Î½Í†€2
-]	java:S125Y"<This block of commented-out lines of code should be removed.(Õí÷ğşÿÿÿÿ8è‚Æ†€2
-]	java:S125`"<This block of commented-out lines of code should be removed.(Õüºãùÿÿÿÿ8è‚Æ†€2
-L	java:S106f"+Replace this use of System.out by a logger.(¸ÆÙÙÿÿÿÿÿ8Ï½Í†€2
-X	java:S125i"<This block of commented-out lines of code should be removed.(ŠÄ©é8ì‚Æ†€2
+java:S1659C"Declare "y" on a separate line.(äÛÁ”8â‚Æ†€2
+X	java:S125?"<This block of commented-out lines of code should be removed.(÷À¥³8ã‚Æ†€2
+X	java:S125?"<This block of commented-out lines of code should be removed.(÷À¥³8ã‚Æ†€2
+L	java:S106J"+Replace this use of System.out by a logger.(¾Îƒüÿÿÿÿ8Î½Í†€2
+]	java:S125N"<This block of commented-out lines of code should be removed.(Õí÷ğşÿÿÿÿ8è‚Æ†€2
+]	java:S125U"<This block of commented-out lines of code should be removed.(Õüºãùÿÿÿÿ8è‚Æ†€2
+L	java:S106["+Replace this use of System.out by a logger.(¸ÆÙÙÿÿÿÿÿ8Ï½Í†€2
+X	java:S125^"<This block of commented-out lines of code should be removed.(ŠÄ©é8ì‚Æ†€2
 `
-java:S1155s">Use isEmpty() to check whether the collection is empty or not.(ÆôŞÙûÿÿÿÿ8ğ‚Æ†€2
+java:S1155h">Use isEmpty() to check whether the collection is empty or not.(ÆôŞÙûÿÿÿÿ8ğ‚Æ†€2
 Z
-java:S1155w">Use isEmpty() to check whether the collection is empty or not.(–¡À8ñ‚Æ†€2
+java:S1155l">Use isEmpty() to check whether the collection is empty or not.(–¡À8ñ‚Æ†€2
+e
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.databind.ObjectMapper'.(´‘¨™8ºğ¶‰€2
 U
 java:S1128"3Remove this unused import 'org.json.JSONException'.(¹Ó·úÿÿÿÿ8Ë‘Ò†€2
+O
+java:S1128	"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ºğ¶‰€2
 Q
 java:S1068"/Remove this unused "teamDetails" private field.(¾½à·ùÿÿÿÿ8ò‚Æ†€2
 F

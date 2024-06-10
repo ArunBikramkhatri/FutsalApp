@@ -34,7 +34,7 @@ public class PlayingPlayers {
             "    },\n" +
             "    {\n" +
             "      \"name\": \"Anish Upadhyay\",\n" +
-            "      \"nickName\": \"ANI-SH\",\n" +
+            "      \"nickName\": \"ANISH\",\n" +
             "      \"rating\": 8,\n" +
             "      \"position\": \"ST\",\n" +
             "      \"jerseyNumber\": \"30\"\n" +
@@ -47,9 +47,9 @@ public class PlayingPlayers {
             "      \"jerseyNumber\": \"19\"\n" +
             "    },\n" +
             "    {\n" +
-            "      \"name\": \"Jenish Parajuli\",\n" +
+            "      \"name\": \"Jenish Shakya\",\n" +
             "      \"nickName\": \"JENISH\",\n" +
-            "      \"rating\": 5,\n" +
+            "      \"rating\": 7,\n" +
             "      \"position\": \"DF\",\n" +
             "      \"jerseyNumber\": \"99\"\n" +
             "    },\n" +
@@ -76,7 +76,7 @@ public class PlayingPlayers {
             "    },\n" +
             "    {\n" +
             "      \"name\": \"Rusum Shrestha\",\n" +
-            "      \"nickName\": \"M EVE R\",\n" +
+            "      \"nickName\": \"MEVER\",\n" +
             "      \"rating\": 5,\n" +
             "      \"position\": \"DF\",\n" +
             "      \"jerseyNumber\": \"14\"\n" +

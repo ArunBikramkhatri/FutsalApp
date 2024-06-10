@@ -2,6 +2,8 @@ package com.nura.futsalapp;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Window;
+import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,12 +35,23 @@ public class MainActivity extends AppCompatActivity {
     ViewPagerAdapter viewPagerAdapter;
 
     private PlayersList allPlayers;
-    private PlayersList playingPlayers ;
+    public PlayersList playingPlayers;
     private FixtureListDTO fixtures;
 
     private FixturesAdapter fixturesAdapter;
     private ArrayList<Fixture> fixtureArrayList;
     private MainOperations mainOperations;
+    private static MainActivity mInstance;
+
+    public MainActivity() {
+    }
+
+    public static MainActivity getInstance() {
+        if (mInstance == null){
+            mInstance =  new MainActivity();
+        }
+        return mInstance;
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -49,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             initPlayerData();
             initFields();
             initFixturesRecyclerData();
+            initPlayingPlayers();
             viewPagerAdapter = new ViewPagerAdapter(this);
             addFragments();
             appViewPager.setAdapter(viewPagerAdapter);
@@ -72,14 +86,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void addFragments() {
         viewPagerAdapter.addFragments(new FixturesFragment(this, fixtureArrayList));
-        viewPagerAdapter.addFragments(new TeamFormationFragment(this));
+        viewPagerAdapter.addFragments(new TeamFormationFragment(this, playingPlayers));
         viewPagerAdapter.addFragments(new PlayerListFragment(this, allPlayers.getPlayers()));
     }
 
     private void initPlayerData() {
         PlayerData playerData = new PlayerData();
         String playerJson = playerData.getPlayerData();
-        allPlayers = MainOperations.initPlayerData(this ,playerJson);
+        allPlayers = MainOperations.initPlayerData(this, playerJson);
 
     }
 
@@ -88,10 +102,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void initPlayingPlayers(){
+    public void initPlayingPlayers() {
         String playingPlayersJson = PlayingPlayers.getPlayingPlayers();
-        playingPlayers = MainOperations.initPlayerData(this , playingPlayersJson);
-        TeamFormation teamFormation = new TeamFormation(playingPlayers.getPlayers());
+        playingPlayers = MainOperations.initPlayerData(this, playingPlayersJson);
     }
 
 }
