@@ -1,9 +1,17 @@
 
+j
+java:S1192F"NDefine a constant instead of duplicating this literal "setFixtures: " 3 times.(Ôõ”/8»À§´2
 
-java:S1319"pThe type of "fixtureArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(Ë…—ù8£½Ìêş1
-{
-java:S1450"^Remove the "fixturesAdapter" field and declare it as a local variable in the relevant methods.(Çï·8§ÛÎêş1
-|
-java:S1450"_Remove the "fixturesRecycler" field and declare it as a local variable in the relevant methods.(çœ³‘8­½Ìêş1
+java:S1319!"pThe type of "fixtureArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(Ë…—ù8±²ˆ´2
+T
+java:S1659"2Declare "pastFixturesRecycler" on a separate line.(şÎÌôùÿÿÿÿ8¸²ˆ´2
+~
+java:S1450"bRemove the "pastFixturesAdapter" field and declare it as a local variable in the relevant methods.(§Ü¦ 8¸²ˆ´2
+…
+java:S1450"cRemove the "pastFixturesRecycler" field and declare it as a local variable in the relevant methods.(şÎÌôùÿÿÿÿ8¸²ˆ´2
+ˆ
+java:S1450"fRemove the "upcomingFixturesAdapter" field and declare it as a local variable in the relevant methods.(‚ä¸°ùÿÿÿÿ8¹²ˆ´2
+‰
+java:S1450"gRemove the "upcomingFixturesRecycler" field and declare it as a local variable in the relevant methods.(şÎÌôùÿÿÿÿ8¹²ˆ´2
 D
-java:S1185#"(Remove this method to simply inherit it.(¥Ë©8®½Ìêş1
+java:S1185("(Remove this method to simply inherit it.(¥Ë©8»²ˆ´2

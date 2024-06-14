@@ -35,12 +35,6 @@ public class TeamFormation {
 
 
     public void makeTeam(int range) {
-//        int totalWeight = 0;
-//        for (Player p : players){
-//            totalWeight += Integer.valueOf(p.getRating());
-//        }
-//
-//        System.out.println("total weight " + totalWeight);
         Random random = new Random();
 
         float toss = random.nextFloat();
@@ -48,22 +42,16 @@ public class TeamFormation {
         if (toss > 0.5) {
             teamOneChoose = true;
         }
-        if (playerArrayList.size()== 1){
-            if (teamOneChoose){
+        if (playerArrayList.size() == 1) {
+            if (teamOneChoose) {
                 teamOne.add(playerArrayList.get(0));
-                System.out.println(" last player Team One : " + playerArrayList.get(0).getName());
 
-            }else {
+            } else {
                 teamTwo.add(playerArrayList.get(0));
-                System.out.println("last player Team two : " + playerArrayList.get(0).getName());
             }
             return;
         }
         for (int i = 0; i < range; i++) {
-//            System.out.println("team one : " +teamOneChoose );
-//            System.out.println("team Two : " +teamTwoChoose );
-//            if(teamOneChoose) {
-
             int x = 0, y = 0;
 
             if (range == 2) {
@@ -71,32 +59,16 @@ public class TeamFormation {
             } else {
                 x = random.nextInt(playerArrayList.size());
             }
-            System.out.println("Team One :" + playerArrayList.get(x).getName());
 
             teamOne.add(playerArrayList.get(x));
             playerArrayList.remove(x);
-//                int y = random.nextInt(players.size());
-//                teamTwo.add(players.get(y));
-//                players.remove(y);
-//                teamOneChoose = false ;
-//                teamTwoChoose = true ;
-//            }
-
-//            if (teamTwoChoose){
             if (range == 2) {
                 y = random.nextInt(4);
             } else {
                 y = random.nextInt(playerArrayList.size());
             }
-            System.out.println("Team two : " + playerArrayList.get(y).getName());
             teamTwo.add(playerArrayList.get(y));
             playerArrayList.remove(y);
-//                int x = random.nextInt(players.size());
-//                teamOne.add(players.get(x));
-//                players.remove(x);
-//                teamTwoChoose = false;
-//                teamOneChoose = true;
-//            }
         }
     }
 

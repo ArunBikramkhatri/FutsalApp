@@ -25,8 +25,6 @@ j
 :app/src/main/java/com/nura/futsalapp/utils/DeviceInfo.java,b/6/b6258f263dda50931cb5a44aeba7ee57d3abbf41
 r
 Bapp/src/main/java/com/nura/futsalapp/ui/TeamFormationFragment.java,e/5/e5104db9a3af9a70009d83c956988c13eeb9068c
-}
-Mapp/src/main/java/com/nura/futsalapp/recyclerViewAdapter/FixturesAdapter.java,1/1/11b763e11a88912df5e2f0005b84e5f194b07e67
 
 Oapp/src/main/java/com/nura/futsalapp/recyclerViewAdapter/PlayerListAdapter.java,f/7/f7e84ad511920d97336dbe124802b114b28dbcac
 f
@@ -61,3 +59,11 @@ m
 =app/src/main/java/com/nura/futsalapp/data/PlayingPlayers.java,b/5/b55f8e925e3662fe9ddae64dbd65f34e4bc86709
 s
 Capp/src/test/java/com/nura/futsalapp/TeamFormationFragmentTest.java,0/a/0aefc5604a3c3c75c8617f41db8ade240241d122
+r
+Bapp/src/main/java/com/nura/futsalapp/ui/PlayerDetailsActivity.java,1/3/135dc97804c1dd1ad75e21f8960659e21d1b0904
+e
+5app/src/main/java/com/nura/futsalapp/utils/Const.java,7/7/776cde8a8dea2ec24d1f98034fabbefc4051bab2
+Ö
+Uapp/src/main/java/com/nura/futsalapp/recyclerViewAdapter/UpcomingFixturesAdapter.java,8/d/8d727ce857051585627c18a7bb438f5c2be2c9ea
+Å
+Qapp/src/main/java/com/nura/futsalapp/recyclerViewAdapter/PastFixturesAdapter.java,b/2/b29bb1c7a1feb0962076d2b66d27e14113c685c7

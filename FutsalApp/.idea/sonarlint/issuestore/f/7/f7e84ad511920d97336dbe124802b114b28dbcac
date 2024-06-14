@@ -1,10 +1,13 @@
 
 ‘
-java:S1319"oThe type of "playerArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ùÅÓşÿÿÿÿÿ8¨¸Î¿ş1
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8ª¸Î¿ş1
-w	java:S1168"VRename this field "player_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8ú‘Ï¿ş1
-{	java:S1168"ZRename this field "player_position" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8¬ÅÏ¿ş1
-y	java:S1168"XRename this field "player_rating" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8˜ùÏ¿ş1
-{	java:S1169"ZRename this field "player_list_img" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Æœ§ÿÿÿÿÿ8¾¸Î¿ş1
+java:S1319"oThe type of "playerArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ÔŞÕşøÿÿÿÿ8¶Ğê¨2
+E
+java:S16043"(Make this anonymous inner class a lambda(ëàø†8¶Ğê¨2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8·Ğê¨2
+w	java:S116M"VRename this field "player_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8ÚĞê¨2
+{	java:S116M"ZRename this field "player_position" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8ÚĞê¨2
+y	java:S116M"XRename this field "player_rating" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8ÚĞê¨2
+{	java:S116N"ZRename this field "player_list_img" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( Æœ§ÿÿÿÿÿ8ÚĞê¨2
+t	java:S116O"XRename this field "player_detail" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ŠĞ¯÷8ÛĞê¨2
 n
-java:S16598"LDeclare "player_position" and all following declarations on a separate line.(³ÖÈÁıÿÿÿÿ8­ÅÏ¿ş1
+java:S1659M"LDeclare "player_position" and all following declarations on a separate line.(³ÖÈÁıÿÿÿÿ8ÛĞê¨2

@@ -6,7 +6,7 @@
     </style>
 
     <style name="Theme.FutsalApp" parent="Base.Theme.FutsalApp" >
-
+        <item name="android:windowFullscreen">true</item>
     </style>
 
 </resources>

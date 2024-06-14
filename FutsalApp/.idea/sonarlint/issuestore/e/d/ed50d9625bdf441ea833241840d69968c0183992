@@ -1,12 +1,12 @@
 
 ‰
-java:S1319"gThe type of "players" should be an interface such as "List" rather than the implementation "ArrayList".(ê²ßàıÿÿÿÿ8íØ×¾ş1
+java:S1319"gThe type of "players" should be an interface such as "List" rather than the implementation "ArrayList".(ê²ßàıÿÿÿÿ8‰©Ú¨2
 }
-java:S1450"[Remove the "recyclerView" field and declare it as a local variable in the relevant methods.(¿á© ıÿÿÿÿ8˜Ù×¾ş1
+java:S1450"[Remove the "recyclerView" field and declare it as a local variable in the relevant methods.(¿á© ıÿÿÿÿ8”©Ú¨2
 
-java:S1450"bRemove the "recyclerViewAdapter" field and declare it as a local variable in the relevant methods.(õ¶ñí8™Ù×¾ş1
+java:S1450"bRemove the "recyclerViewAdapter" field and declare it as a local variable in the relevant methods.(õ¶ñí8”©Ú¨2
 D
-java:S1185&"(Remove this method to simply inherit it.(¥Ë©8Ù×¾ş1
-]	java:S125."<This block of commented-out lines of code should be removed.(ÓÙ’ÿÿÿÿÿ8 Ù×¾ş1
+java:S1185&"(Remove this method to simply inherit it.(¥Ë©8–©Ú¨2
+]	java:S125."<This block of commented-out lines of code should be removed.(ÓÙ’ÿÿÿÿÿ8—©Ú¨2
 D
-java:S1068"'Remove this unused "TAG" private field.(£”¦Ù8¥Ù×¾ş1
+java:S1068"'Remove this unused "TAG" private field.(£”¦Ù8š©Ú¨2

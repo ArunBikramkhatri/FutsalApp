@@ -7,7 +7,6 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     app:cardBackgroundColor="@android:color/transparent"
-    android:elevation="20dp"
     android:orientation="vertical"
     >
 
@@ -28,23 +27,33 @@
 <!--            android:background="@android:color/white"-->
 <!--            android:src="@mipmap/ic_launcher"></ImageView>-->
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/player_img"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="@color/white"
-            app:shapeAppearanceOverlay="@style/circular"
-            android:elevation="20dp"
-            app:srcCompat="@drawable/ajit"
-            tools:ignore="MissingConstraints"></com.google.android.material.imageview.ShapeableImageView>
+<!--        <com.google.android.material.imageview.ShapeableImageView-->
+<!--            android:id="@+id/player_img"-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:background="@color/white"-->
+<!--            app:shapeAppearanceOverlay="@style/circular"-->
+<!--            android:elevation="20dp"-->
+<!--            app:srcCompat="@drawable/arun"-->
+<!--            tools:ignore="MissingConstraints"></com.google.android.material.imageview.ShapeableImageView>-->
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/player_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:translationZ="5dp"
+        app:civ_circle_background_color="#EEEEEE"
+        android:src="@drawable/question"
+        app:civ_border_width="1dp"
+        app:civ_border_color="@color/white"/>
 
         <TextView
             android:id="@+id/player_card_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Player"
+            android:text="........"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="10dp"

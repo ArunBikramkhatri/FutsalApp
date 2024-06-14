@@ -3,18 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/player_detail"
     android:layout_height="wrap_content"
     android:background="@android:color/transparent"
     android:layout_margin="10dp">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/player_detail"
+
         app:cardCornerRadius="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:translationZ="0dp"
         tools:ignore="MissingConstraints">
-
 
         <LinearLayout
             android:layout_width="match_parent"

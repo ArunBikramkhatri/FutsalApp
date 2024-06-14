@@ -2,7 +2,6 @@ package com.nura.futsalapp;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Window;
 import android.view.WindowManager;
 
 import androidx.annotation.Nullable;
@@ -18,8 +17,7 @@ import com.nura.futsalapp.dto.FixtureListDTO;
 import com.nura.futsalapp.model.Fixture;
 import com.nura.futsalapp.model.PlayersList;
 import com.nura.futsalapp.data.PlayerData;
-import com.nura.futsalapp.model.TeamFormation;
-import com.nura.futsalapp.recyclerViewAdapter.FixturesAdapter;
+import com.nura.futsalapp.recyclerViewAdapter.UpcomingFixturesAdapter;
 import com.nura.futsalapp.ui.FixturesFragment;
 import com.nura.futsalapp.ui.PlayerListFragment;
 import com.nura.futsalapp.ui.TeamFormationFragment;
@@ -41,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     public PlayersList playingPlayers;
     private FixtureListDTO fixtures;
 
-    private FixturesAdapter fixturesAdapter;
+    private UpcomingFixturesAdapter upcomingFixturesAdapter;
     private ArrayList<Fixture> fixtureArrayList;
     private MainOperations mainOperations;
     private static MainActivity mInstance;
@@ -61,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.app_view_pager);
         WindowInsetsControllerCompat windowInsetsControllerCompat = WindowCompat.getInsetsController(getWindow() ,getWindow().getDecorView());
-
         windowInsetsControllerCompat.hide(WindowInsetsCompat.Type.systemBars());
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         try {

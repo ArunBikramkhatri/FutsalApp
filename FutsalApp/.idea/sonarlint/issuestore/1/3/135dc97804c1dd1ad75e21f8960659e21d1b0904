@@ -1,0 +1,6 @@
+
+w
+java:S1450"URemove the "player" field and declare it as a local variable in the relevant methods.(Ç¹Ù±úÿÿÿÿ8˜ÔÎ©2
+\
+java:S1874 ":Remove this use of "getParcelableExtra"; it is deprecated.(¹Šâøÿÿÿÿ8ÔÎ©2
+E	java:S108$")Either remove or fill this block of code.(”ı¾8ÔÎ©2

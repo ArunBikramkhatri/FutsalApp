@@ -46,7 +46,7 @@ public class PlayerListFragment extends Fragment {
 //        initRecyclerAdapter();
         View view = inflater.inflate(R.layout.player_list_recycler,container , false);
         recyclerView = view.findViewById(R.id.player_recycler_list);
-        recyclerViewAdapter = new PlayerListAdapter(players);
+        recyclerViewAdapter = new PlayerListAdapter(players, this.activity);
         recyclerView.setAdapter(recyclerViewAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(activity));
         return view ;

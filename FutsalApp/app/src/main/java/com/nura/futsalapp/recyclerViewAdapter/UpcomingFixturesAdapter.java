@@ -15,19 +15,19 @@ import com.nura.futsalapp.model.Player;
 
 import java.util.ArrayList;
 
-public class FixturesAdapter extends RecyclerView.Adapter<FixturesAdapter.ViewHolder> {
-    private static final String TAG = "FixturesAdapter";
+public class UpcomingFixturesAdapter extends RecyclerView.Adapter<UpcomingFixturesAdapter.ViewHolder> {
+    private static final String TAG = "UpcomingFixturesAdapter";
     private ArrayList<Fixture> fixtureArrayList;
 
 
-    public FixturesAdapter(ArrayList<Fixture> fixtureArrayList) {
+    public UpcomingFixturesAdapter(ArrayList<Fixture> fixtureArrayList) {
         this.fixtureArrayList = fixtureArrayList;
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fixture_layout , parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.upcoming_fixture_layout, parent,false);
         return new ViewHolder(view);
     }
 
@@ -38,7 +38,7 @@ public class FixturesAdapter extends RecyclerView.Adapter<FixturesAdapter.ViewHo
             Player p2 = fixtureArrayList.get(position).getPlayerTwo();
             holder.fixtureTeamOne.setText(p1.getName());
             holder.fixtureTeamTwo.setText(p2.getName());
-            holder.fixtureScore.setText(fixtureArrayList.get(position).getScore());
+//            holder.fixtureScore.setText(fixtureArrayList.get(position).getScore());
         } catch (Exception e) {
            e.printStackTrace();
             Log.e(TAG, "onBindViewHolder: " + e.getLocalizedMessage(), e);
@@ -54,9 +54,9 @@ public class FixturesAdapter extends RecyclerView.Adapter<FixturesAdapter.ViewHo
         private TextView fixtureTeamOne , fixtureTeamTwo , fixtureScore;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            fixtureTeamOne = itemView.findViewById(R.id.fixtureTeamOneName);
-            fixtureTeamTwo = itemView.findViewById(R.id.fixtureTeamTwoName);
-            fixtureScore = itemView.findViewById(R.id.fixtureScore);
+            fixtureTeamOne = itemView.findViewById(R.id.upcomingFixtureTeamOne);
+            fixtureTeamTwo = itemView.findViewById(R.id.upcomingFixtureTeamTwo);
+//            fixtureScore = itemView.findViewById(R.id.fixtureScore);
         }
     }
 }

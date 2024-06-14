@@ -1,10 +1,14 @@
 package com.nura.futsalapp.model;
 
 import android.content.Context;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.util.Log;
 
+import androidx.annotation.NonNull;
 
-public class Player {
+
+public class Player implements Parcelable {
 
     private static final String TAG = "Player";
     private String name ;
@@ -25,6 +29,26 @@ public class Player {
         this.nickName = nickName;
         this.jerseyNumber = jerseyNumber;
     }
+
+    protected Player(Parcel in) {
+        name = in.readString();
+        rating = in.readInt();
+        position = in.readString();
+        nickName = in.readString();
+        jerseyNumber = in.readString();
+    }
+
+    public static final Creator<Player> CREATOR = new Creator<Player>() {
+        @Override
+        public Player createFromParcel(Parcel in) {
+            return new Player(in);
+        }
+
+        @Override
+        public Player[] newArray(int size) {
+            return new Player[size];
+        }
+    };
 
     public String getName() {
         return name;
@@ -94,5 +118,19 @@ public class Player {
                 ", nickName='" + nickName + '\'' +
                 ", jerseyNo='" + jerseyNumber + '\'' +
                 '}';
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(@NonNull Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeInt(rating);
+        dest.writeString(position);
+        dest.writeString(nickName);
+        dest.writeString(jerseyNumber);
     }
 }

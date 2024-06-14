@@ -1,50 +1,44 @@
 
-K
-java:S1604¯"(Make this anonymous inner class a lambda(Êœüûÿÿÿÿ8¨¯ñŒ€2
-w	java:S116*"VRename this field "team_one_p1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¢Í¼ùÿÿÿÿ8Ì¯ñŒ€2
-w	java:S116*"VRename this field "team_one_p2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¢Í¼ùÿÿÿÿ8Ì¯ñŒ€2
-w	java:S116*"VRename this field "team_one_p3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¢Í¼ùÿÿÿÿ8Ì¯ñŒ€2
-w	java:S116*"VRename this field "team_one_p4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¢Í¼ùÿÿÿÿ8Ì¯ñŒ€2
-w	java:S116+"VRename this field "team_two_p1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³éÉ¹ûÿÿÿÿ8Ì¯ñŒ€2
-w	java:S116+"VRename this field "team_two_p2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³éÉ¹ûÿÿÿÿ8Ì¯ñŒ€2
-w	java:S116+"VRename this field "team_two_p3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³éÉ¹ûÿÿÿÿ8Ì¯ñŒ€2
-w	java:S116+"VRename this field "team_two_p4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³éÉ¹ûÿÿÿÿ8Ì¯ñŒ€2
+F
+java:S1604–"(Make this anonymous inner class a lambda(½§¼Å8í‹È‰2
+F
+java:S1604Ã"(Make this anonymous inner class a lambda(ê®Âµ8í‹È‰2
+F
+java:S1604Í"(Make this anonymous inner class a lambda(ê®Âµ8Â¹Ê‰2
+w	java:S1165"VRename this field "team_one_p1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¢Í¼ùÿÿÿÿ8šŒÈ‰2
+w	java:S1165"VRename this field "team_one_p2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¢Í¼ùÿÿÿÿ8šŒÈ‰2
+w	java:S1165"VRename this field "team_one_p3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¢Í¼ùÿÿÿÿ8šŒÈ‰2
+w	java:S1165"VRename this field "team_one_p4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ğ¢Í¼ùÿÿÿÿ8šŒÈ‰2
+w	java:S1166"VRename this field "team_two_p1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³éÉ¹ûÿÿÿÿ8šŒÈ‰2
+w	java:S1166"VRename this field "team_two_p2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³éÉ¹ûÿÿÿÿ8šŒÈ‰2
+w	java:S1166"VRename this field "team_two_p3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³éÉ¹ûÿÿÿÿ8šŒÈ‰2
+w	java:S1166"VRename this field "team_two_p4" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³éÉ¹ûÿÿÿÿ8šŒÈ‰2
 N
-java:S1659",Declare "teamTwoAdapter" on a separate line.(ÛæÁ’ûÿÿÿÿ8Ï¯ñŒ€2
+java:S1659)",Declare "teamTwoAdapter" on a separate line.(ÛæÁ’ûÿÿÿÿ8œŒÈ‰2
 O
-java:S1659 "-Declare "teamTwoRecycler" on a separate line.(‹çÉ—şÿÿÿÿ8Ï¯ñŒ€2
+java:S1659+"-Declare "teamTwoRecycler" on a separate line.(‹çÉ—şÿÿÿÿ8œŒÈ‰2
 N
-java:S1659$",Declare "teamTwoPlayers" on a separate line.(À‡ëºşÿÿÿÿ8Ï¯ñŒ€2
+java:S1659/",Declare "teamTwoPlayers" on a separate line.(À‡ëºşÿÿÿÿ8œŒÈ‰2
 j
-java:S1659*"HDeclare "team_one_p2" and all following declarations on a separate line.(ğ¢Í¼ùÿÿÿÿ8Ï¯ñŒ€2
+java:S16595"HDeclare "team_one_p2" and all following declarations on a separate line.(ğ¢Í¼ùÿÿÿÿ8œŒÈ‰2
 j
-java:S1659+"HDeclare "team_two_p2" and all following declarations on a separate line.(³éÉ¹ûÿÿÿÿ8Ï¯ñŒ€2
+java:S16596"HDeclare "team_two_p2" and all following declarations on a separate line.(³éÉ¹ûÿÿÿÿ8œŒÈ‰2
+Y
+java:S16598"7Declare "teamTwoPlayerCardBindings" on a separate line.(ıº†Óúÿÿÿÿ8œŒÈ‰2
 |
-java:S1450("_Remove the "formationBinding" field and declare it as a local variable in the relevant methods.(ÏŒ Ä8Ğ¯ñŒ€2
-
-java:S1450"]Remove the "teamOneAdapter" field and declare it as a local variable in the relevant methods.(ÛæÁ’ûÿÿÿÿ8Ğ¯ñŒ€2
-
-java:S1450"]Remove the "teamTwoAdapter" field and declare it as a local variable in the relevant methods.(ÛæÁ’ûÿÿÿÿ8Ğ¯ñŒ€2
+java:S14503"_Remove the "formationBinding" field and declare it as a local variable in the relevant methods.(ÏŒ Ä8ŒÈ‰2
+y
+java:S1450."\Remove the "teamFormation" field and declare it as a local variable in the relevant methods.(¾‹ËÅ8ŒÈ‰2
+]	java:S125I"<This block of commented-out lines of code should be removed.(şÎ›´øÿÿÿÿ8¡ŒÈ‰2
 D
-java:S1185E"(Remove this method to simply inherit it.(¥Ë©8İ¯ñŒ€2
-X	java:S125Q"<This block of commented-out lines of code should be removed.(™œÙĞ8Ş¯ñŒ€2
-]	java:S125W"<This block of commented-out lines of code should be removed.(Òì‰İúÿÿÿÿ8Ş¯ñŒ€2
-]	java:S125^"<This block of commented-out lines of code should be removed.(€Ù’øÿÿÿÿ8Ş¯ñŒ€2
-J
-java:S1481i"-Remove this unused "forwards" local variable.(Í–Ö8ß¯ñŒ€2
-P
-java:S1481p".Remove this unused "midfields" local variable.(•İ·øÿÿÿÿ8ß¯ñŒ€2
-K
-java:S1481w".Remove this unused "defenders" local variable.(çø‡¦8ß¯ñŒ€2
-M
-java:S1481"0Remove this unused "goalkeepers" local variable.(©Å¬8ß¯ñŒ€2
-^	java:S125„"<This block of commented-out lines of code should be removed.(“ª‹ıÿÿÿÿ8à¯ñŒ€2
-^	java:S125•"<This block of commented-out lines of code should be removed.(ôÑ‹Ñÿÿÿÿÿ8à¯ñŒ€2
-Y	java:S125š"<This block of commented-out lines of code should be removed.(­£Ÿ8â¯ñŒ€2
+java:S1185r"(Remove this method to simply inherit it.(¥Ë©8¤ŒÈ‰2
 I
-java:S1172®"+Remove this unused method parameter "view".(Â¦ªï8æ¯ñŒ€2
-^	java:S125´"<This block of commented-out lines of code should be removed.(Œ©šüÿÿÿÿ8ç¯ñŒ€2
-^
-java:S1128"<Remove this unused import 'com.nura.futsalapp.MainActivity'.(›ñ€ºúÿÿÿÿ8€®óŒ€2
-S
-java:S1144g"6Remove this unused private "initTeamFormation" method.(‰Â«İ8é¯ñŒ€2
+java:S1172•"+Remove this unused method parameter "view".(Â¦ªï8¥ŒÈ‰2
+T
+java:S1068)"2Remove this unused "teamOneAdapter" private field.(ÛæÁ’ûÿÿÿÿ8ªŒÈ‰2
+T
+java:S1068)"2Remove this unused "teamTwoAdapter" private field.(ÛæÁ’ûÿÿÿÿ8ªŒÈ‰2
+U
+java:S1068+"3Remove this unused "teamOneRecycler" private field.(‹çÉ—şÿÿÿÿ8ªŒÈ‰2
+U
+java:S1068+"3Remove this unused "teamTwoRecycler" private field.(‹çÉ—şÿÿÿÿ8ªŒÈ‰2

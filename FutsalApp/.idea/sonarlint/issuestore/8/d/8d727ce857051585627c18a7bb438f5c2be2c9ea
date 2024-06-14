@@ -1,0 +1,10 @@
+
+’
+java:S1319"pThe type of "fixtureArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(Òƒ¤æüÿÿÿÿ8äÑãêş1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8åÑãêş1
+X	java:S125)"<This block of commented-out lines of code should be removed.(»ÆÓ„8›ÏŞ²2
+h
+java:S16596"KDeclare "fixtureTeamTwo" and all following declarations on a separate line.(ËÑÆı8ïÑãêş1
+X	java:S125;"<This block of commented-out lines of code should be removed.(¡ÂÎ™8é†Ş²2
+M
+java:S10686"0Remove this unused "fixtureScore" private field.(ËÑÆı8ÏŞ²2

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/upcomingFixturesLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:translationZ="5dp"
+    android:background="@android:color/transparent"
+    android:layout_marginVertical="5dp"
+    app:cardCornerRadius="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_marginVertical="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/mancity"></ImageView>
+
+            <TextView
+                android:id="@+id/upcomingFixtureTeamOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ManCity"
+                android:textColor="@color/grey"
+                android:textAlignment="center"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginVertical="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="15dp"
+                android:textColor="@color/grey"
+                android:textAlignment="center">
+                ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18:00"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textAlignment="center">
+                ></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginVertical="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:src="@drawable/manu"></ImageView>
+
+            <TextView
+                android:id="@+id/upcomingFixtureTeamTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ManUnited"
+                android:textColor="@color/grey"
+                android:textAlignment="center"></TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--        <LinearLayout-->
+    <!--            android:id="@+id/fixtureLayout"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:weightSum="1">-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/fixtureTeamOneImg"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="0.15"-->
+    <!--                android:src="@drawable/players"></ImageView>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/fixtureTeamOneName"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textSize="15dp"-->
+    <!--                android:layout_weight="0.3"></TextView>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/fixtureScore"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="0.1"-->
+    <!--                android:text="VS"-->
+    <!--                android:textSize="15dp"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textAlignment="center"></TextView>-->
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/fixtureTeamTwoName"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:gravity="center"-->
+    <!--                android:textSize="15dp"-->
+    <!--                android:layout_weight="0.3"></TextView>-->
+
+    <!--            <ImageView-->
+    <!--                android:id="@+id/fixtureTeamTwoImg"-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="0.15"-->
+    <!--                android:src="@drawable/players"></ImageView>-->
+    <!--        </LinearLayout>-->
+
+</androidx.cardview.widget.CardView>

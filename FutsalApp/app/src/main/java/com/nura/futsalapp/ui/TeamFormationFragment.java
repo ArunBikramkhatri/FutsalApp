@@ -2,21 +2,32 @@ package com.nura.futsalapp.ui;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.Dialog;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.view.Window;
+import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.LinearLayout;
 
-import com.nura.futsalapp.MainActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.nura.futsalapp.R;
 import com.nura.futsalapp.databinding.FragmentTeamFormationBinding;
 import com.nura.futsalapp.databinding.PlayerCardBinding;
+import com.nura.futsalapp.databinding.PlayerStatPopUpBinding;
 import com.nura.futsalapp.model.Player;
 import com.nura.futsalapp.model.PlayersList;
 import com.nura.futsalapp.model.TeamFormation;
@@ -35,13 +46,18 @@ public class TeamFormationFragment extends Fragment {
     private TeamFormation teamFormation;
     ArrayList<Player> teamOnePlayers, teamTwoPlayers;
 
-    private Button button;
+    private FloatingActionButton makeTeam;
 
     private FragmentTeamFormationBinding formationBinding;
 
-    private PlayerCardBinding team_one_p1,team_one_p2,team_one_p3,team_one_p4;
-    private PlayerCardBinding team_two_p1,team_two_p2,team_two_p3,team_two_p4;
+    private PlayerCardBinding team_one_p1, team_one_p2, team_one_p3, team_one_p4;
+    private PlayerCardBinding team_two_p1, team_two_p2, team_two_p3, team_two_p4;
 
+    private ArrayList<PlayerCardBinding> teamOnePlayerCardBindings, teamTwoPlayerCardBindings;
+
+
+    PlayerStatPopUpBinding playerStatPopUpBinding;
+    private Dialog playerPopUp;
 
     Activity activity;
 
@@ -49,6 +65,35 @@ public class TeamFormationFragment extends Fragment {
         this.activity = activity;
         players.sort();
         this.players = players;
+        initPlayerPopUp();
+    }
+
+    private void initPlayerPopUp(){
+        playerPopUp = new Dialog(activity);
+//        playerPopUp.requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        playerPopUp.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+//
+//
+//        // Hide system bars in the dialog
+//        WindowInsetsControllerCompat windowInsetsControllerCompat = WindowCompat.getInsetsController(playerPopUp.getWindow(), playerPopUp.getWindow().getDecorView());
+//        if (windowInsetsControllerCompat != null) {
+//            windowInsetsControllerCompat.hide(WindowInsetsCompat.Type.systemBars());
+//            windowInsetsControllerCompat.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
+//        }
+    }
+    private void initPlayerCardBinding() {
+        teamOnePlayerCardBindings = new ArrayList<>();
+        teamOnePlayerCardBindings.add(team_one_p1);
+        teamOnePlayerCardBindings.add(team_one_p2);
+        teamOnePlayerCardBindings.add(team_one_p3);
+        teamOnePlayerCardBindings.add(team_one_p4);
+
+        teamTwoPlayerCardBindings = new ArrayList<>();
+        teamTwoPlayerCardBindings.add(team_two_p1);
+        teamTwoPlayerCardBindings.add(team_two_p2);
+        teamTwoPlayerCardBindings.add(team_two_p3);
+        teamTwoPlayerCardBindings.add(team_two_p4);
+        setPlayerOnClickListener();
 
     }
 
@@ -57,8 +102,8 @@ public class TeamFormationFragment extends Fragment {
         Log.d(TAG, "createTeams: " + players.toString());
         if (players.getPlayers().size() >= 8) {
             teamFormation.createTeam();
-        }else {
-            Log.d(TAG, "createTeams: players numbers is less than 8" );
+        } else {
+            Log.d(TAG, "createTeams: players numbers is less than 8");
         }
         teamOnePlayers = teamFormation.getTeamOne();
         teamTwoPlayers = teamFormation.getTeamTwo();
@@ -73,66 +118,13 @@ public class TeamFormationFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        playerStatPopUpBinding = PlayerStatPopUpBinding.inflate(getLayoutInflater());
         formationBinding = FragmentTeamFormationBinding.inflate(getLayoutInflater());
         View view = formationBinding.getRoot();
         initFields(formationBinding);
         setClicklistener(view);
         return view;
-//        View view = inflater.inflate(R.layout.fragment_team_formation,container ,false);
-//        initFields(view);
-//        setClicklistener();
-//        return  view;
 
-
-//        View view = inflater.inflate(R.layout.team_formation , container, false);
-//        initFields(view);
-//        setClicklistener();
-//        return view;
-    }
-
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_main);
-//
-//        initFields();
-//        setClicklistener();
-//    }
-//
-
-    private void initTeamFormation() {
-
-        String forwards = "[\n" +
-                "    {\"name\": \"Lionel Messi\", \"rating\": 8, \"position\": \"ST\"},\n" +
-                "    {\"name\": \"Cristiano Ronaldo\", \"rating\": 8, \"position\": \"ST\"},\n" +
-                "    {\"name\": \"Neymar Jr\", \"rating\": 8, \"position\": \"ST\"},\n" +
-                "    {\"name\": \"Kylian Mbappe\", \"rating\": 7, \"position\": \"ST\"}\n" +
-                "]\n";
-
-        String midfields = "[\n" +
-                "    {\"name\": \"Kevin De Bruyne\", \"rating\": 8, \"position\": \"CMF\"},\n" +
-                "    {\"name\": \"Luka Modric\", \"rating\": 8, \"position\": \"CMF\"},\n" +
-                "    {\"name\": \"Paul Pogba\", \"rating\": 8, \"position\": \"CMF\"},\n" +
-                "    {\"name\": \"Toni Kroos\", \"rating\": 7, \"position\": \"CMF\"}\n" +
-                "]\n";
-
-        String defenders = "[\n" +
-                "    {\"name\": \"Virgil van Dijk\", \"rating\": 8, \"position\": \"CB\"},\n" +
-                "    {\"name\": \"Sergio Ramos\", \"rating\": 8, \"position\": \"CB\"},\n" +
-                "    {\"name\": \"Giorgio Chiellini\", \"rating\": 8, \"position\": \"CB\"},\n" +
-                "    {\"name\": \"Thiago Silva\", \"rating\": 7, \"position\": \"CB\"}\n" +
-                "]\n";
-
-
-        String goalkeepers = "[\n" +
-                "    {\"name\": \"David De Gea\", \"rating\": 7, \"position\": \"GK\"},\n" +
-                "    {\"name\": \"Manuel Neuer\", \"rating\": 7, \"position\": \"GK\"}\n" +
-                "]\n";
-
-//        teamFormation.addListPlayer(defenders);
-//        teamFormation.makeTeam();
-//        teamFormation.addListPlayer(goalkeepers);
-//        teamFormation.makeTeam();
     }
 
 
@@ -146,68 +138,79 @@ public class TeamFormationFragment extends Fragment {
         team_two_p2 = view.teamTwoP2;
         team_two_p3 = view.teamTwoP3;
         team_two_p4 = view.teamTwoP4;
-//        team_one_p2 = view.findViewById(R.id.team_one_p2);
-//        team_one_p3 = view.findViewById(R.id.team_one_p3);
-//        team_one_p4 = view.findViewById(R.id.team_one_p4);
 
-        button = view.makeTeam;
-//        teamOneRecycler = view.findViewById(R.id.team_one);
-//        teamTwoRecycler = view.findViewById(R.id.team_two);
-    }
+        makeTeam = view.makeTeam;
 
-    public void initTeamOne() {
+        initPlayerCardBinding();
 
-
-        teamOneAdapter = new RecyclerViewAdapter(teamFormation.getTeamOne());
-        teamOneRecycler.setAdapter(teamOneAdapter);
-        teamOneRecycler.setLayoutManager(new GridLayoutManager(activity, 2));
-
-    }
-
-    public void initTeamTwo() {
-        teamTwoAdapter = new RecyclerViewAdapter(teamFormation.getTeamTwo());
-        teamTwoRecycler.setAdapter(teamTwoAdapter);
-        teamTwoRecycler.setLayoutManager(new GridLayoutManager(activity, 3));
     }
 
 
     private void setClicklistener(View view) {
-        button.setOnClickListener(new View.OnClickListener() {
+        makeTeam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                playAnimation();
+
                 createTeams();
                 setField();
-//                initTeamFormation();
-//                initTeamOne();
-//                initTeamTwo();
             }
         });
     }
 
-    private void setField(){
-        team_one_p1.playerCardName.setText(teamOnePlayers.get(0).getNickName());
-        team_one_p1.playerImg.setImageResource(teamOnePlayers.get(0).getImageResId());
+    private void playAnimation() {
+        Animation animation
+                = AnimationUtils
+                .loadAnimation(
+                        getContext(),
+                        R.anim.blink);
+        // call the startAnimation method
 
-        team_one_p2.playerCardName.setText(teamOnePlayers.get(1).getNickName());
-        team_one_p2.playerImg.setImageResource(teamOnePlayers.get(1).getImageResId());
+        for (PlayerCardBinding p : teamOnePlayerCardBindings) {
+            p.playerCardName.setAnimation(animation);
+            p.playerImg.setAnimation(animation);
+        }
 
-        team_one_p3.playerCardName.setText(teamOnePlayers.get(2).getNickName());
-        team_one_p3.playerImg.setImageResource(teamOnePlayers.get(2).getImageResId());
+        for (PlayerCardBinding p : teamTwoPlayerCardBindings) {
+            p.playerCardName.setAnimation(animation);
+            p.playerImg.setAnimation(animation);
+        }
+    }
 
-        team_one_p4.playerCardName.setText(teamOnePlayers.get(3).getNickName());
-        team_one_p4.playerImg.setImageResource(teamOnePlayers.get(3).getImageResId());
+    private void setField() {
+        for (int i = 0; i < teamOnePlayerCardBindings.size(); i++) {
+            teamOnePlayerCardBindings.get(i).playerCardName.setText(teamOnePlayers.get(i).getNickName());
+            teamOnePlayerCardBindings.get(i).playerImg.setImageResource(teamOnePlayers.get(i).getImageResId());
+        }
 
-        team_two_p1.playerCardName.setText(teamTwoPlayers.get(0).getNickName());
-        team_two_p1.playerImg.setImageResource(teamTwoPlayers.get(0).getImageResId());
+        for (int i = 0; i < teamTwoPlayerCardBindings.size(); i++) {
+            teamTwoPlayerCardBindings.get(i).playerCardName.setText(teamTwoPlayers.get(i).getNickName());
+            teamTwoPlayerCardBindings.get(i).playerImg.setImageResource(teamTwoPlayers.get(i).getImageResId());
+        }
 
-        team_two_p2.playerCardName.setText(teamTwoPlayers.get(1).getNickName());
-        team_two_p2.playerImg.setImageResource(teamTwoPlayers.get(1).getImageResId());
+    }
 
-        team_two_p3.playerCardName.setText(teamTwoPlayers.get(2).getNickName());
-        team_two_p3.playerImg.setImageResource(teamTwoPlayers.get(2).getImageResId());
-
-        team_two_p4.playerCardName.setText(teamTwoPlayers.get(3).getNickName());
-        team_two_p4.playerImg.setImageResource(teamTwoPlayers.get(3).getImageResId());
+    private void setPlayerOnClickListener(){
+        for (PlayerCardBinding p : teamOnePlayerCardBindings) {
+            p.playerCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    playerPopUp.setContentView(playerStatPopUpBinding.playerStatPopUp) ;
+                    playerStatPopUpBinding.playerStatImg.setImageResource(Integer.getInteger(String.valueOf(p.playerImg.getId())));
+                    playerPopUp.show();
+                }
+            });
+        }
+        for (PlayerCardBinding p : teamTwoPlayerCardBindings) {
+            p.playerCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    playerPopUp.setContentView(playerStatPopUpBinding.playerStatPopUp) ;
+                    playerStatPopUpBinding.playerStatImg.setImageResource(teamOnePlayers.get(1).getImageResId());
+                    playerPopUp.show();
+                }
+            });
+        }
     }
 
 }
