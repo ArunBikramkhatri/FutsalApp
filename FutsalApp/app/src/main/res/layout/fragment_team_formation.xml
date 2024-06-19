@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
     tools:context=".ui.TeamFormationFragment">
 
     <ImageView
         android:id="@+id/field"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:alpha="0"
         android:scaleType="fitXY"
-        android:src="@drawable/footballfield"
+        android:src="@drawable/footballfieldone"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp"></ImageView>
 
@@ -59,7 +59,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/team_one_p1"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.06"></include>
+            app:layout_constraintVertical_bias="0.129"></include>
 
         <include
             android:id="@+id/team_one_p1"
@@ -76,19 +76,16 @@
             layout="@layout/player_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/team_one_p3"
-            app:layout_constraintTop_toTopOf="@+id/team_one_p3"></include>
+            app:layout_constraintTop_toBottomOf="@+id/team_one_p1"></include>
 
         <include
             android:id="@+id/team_one_p3"
             layout="@layout/player_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintEnd_toStartOf="@+id/team_one_p2"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            android:layout_marginStart="44dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/team_one_p1"></include>
 
@@ -129,31 +126,6 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.939"></include>
 
-        <include
-            android:id="@+id/team_two_p3"
-            layout="@layout/player_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/team_two_p1"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintHorizontal_chainStyle="spread_inside"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.09"></include>
-
-        <include
-            android:id="@+id/team_two_p1"
-            layout="@layout/player_card"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/team_two_p3"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.09"></include>
-
         <!--        <Button-->
         <!--            android:id="@+id/make_team"-->
         <!--            android:layout_width="50dp"-->
@@ -164,6 +136,30 @@
         <!--            app:layout_constraintStart_toStartOf="parent"-->
         <!--            tools:ignore="MissingConstraints"-->
         <!--            tools:layout_editor_absoluteY="266dp"></Button>-->
+
+        <include
+            android:id="@+id/team_two_p3"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toTopOf="@+id/team_two_p4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"></include>
+
+        <include
+            android:id="@+id/team_two_p1"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="56dp"
+            android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toTopOf="@+id/team_two_p2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"></include>
 
         <include
             android:id="@+id/team_two_p4"

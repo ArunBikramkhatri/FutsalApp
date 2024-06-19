@@ -4,6 +4,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -40,7 +41,8 @@ public class PastFixturesAdapter  extends RecyclerView.Adapter<PastFixturesAdapt
             holder.teamOneName.setText(fixture.getPlayerOne().getName());
             holder.teamTwoName.setText(fixture.getPlayerTwo().getName());
             holder.score.setText(fixture.getScore());
-
+            holder.teamOneLogo.setImageResource(fixture.getPlayerOne().getTeamLogoId());
+            holder.teamTwoLogo.setImageResource(fixture.getPlayerTwo().getTeamLogoId());
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -54,12 +56,15 @@ public class PastFixturesAdapter  extends RecyclerView.Adapter<PastFixturesAdapt
     public class ViewHolder extends RecyclerView.ViewHolder {
 
         private TextView teamOneName , teamTwoName,  score ;
+        private ImageView teamOneLogo , teamTwoLogo ;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             teamOneName = itemView.findViewById(R.id.pastFixtureTeamOne) ;
             teamTwoName = itemView.findViewById(R.id.pastFixtureTeamTwo) ;
             score = itemView.findViewById(R.id.textView2);
+            teamOneLogo = itemView.findViewById(R.id.teamOneLogo);
+            teamTwoLogo = itemView.findViewById(R.id.teamTwoLogo);
         }
     }
 }

@@ -1,5 +1,6 @@
 package com.nura.futsalapp;
 
+import android.app.Activity;
 import android.content.Context;
 import android.util.Log;
 
@@ -59,7 +60,7 @@ public class MainOperations {
     }
 
 
-    public static ArrayList<Fixture> initFixturesRecyclerData(PlayersList players) {
+    public static ArrayList<Fixture> initFixturesRecyclerData(PlayersList players , Activity activity) {
         FixtureListDTO fixtures = null;
         ArrayList<Fixture> fixtureArrayList = new ArrayList<>();
         try {
@@ -81,6 +82,12 @@ public class MainOperations {
                     }
 
                 }
+                p1.setCaptain(true);
+                p2.setCaptain(true);
+
+                p1.resolveImageResId(activity);
+                p2.resolveImageResId(activity);
+
                 fixtureArrayList.add(new Fixture(p1, p2, fixtureDTO.getStatus()));
                 Log.d(TAG, "initFixturesRecyclerData: " + fixtureArrayList.toString());
             }

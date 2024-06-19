@@ -17,17 +17,21 @@ public class Player implements Parcelable {
     private String nickName;
     private String jerseyNumber;
     private transient  int imageResId ;
+    private transient int teamLogoId;
+
+    private boolean isCaptain =false ;
 
 
     public Player() {
     }
 
-    public Player(String name, int rating, String position, String nickName, String jerseyNumber) {
+    public Player(String name, int rating, String position, String nickName, String jerseyNumber ,boolean isCaptain) {
         this.name = name;
         this.rating = rating;
         this.position = position;
         this.nickName = nickName;
         this.jerseyNumber = jerseyNumber;
+        this.isCaptain = isCaptain;
     }
 
     protected Player(Parcel in) {
@@ -98,13 +102,36 @@ public class Player implements Parcelable {
         this.imageResId = imageResId;
     }
 
+    public int getTeamLogoId() {
+        return teamLogoId;
+    }
+
+    public void setTeamLogoId(int teamLogoId) {
+        this.teamLogoId = teamLogoId;
+    }
+
+    public boolean isCaptain() {
+        return isCaptain;
+    }
+
+    public void setCaptain(boolean captain) {
+        isCaptain = captain;
+    }
 
     public void resolveImageResId(Context context) {
         if (name != null) {
-            String imageName = name.toLowerCase(); // Assuming the drawable resource names are in lowercase
+            String imageName = getNickName().toLowerCase(); // Assuming the drawable resource names are in lowercase
             imageResId = context.getResources().getIdentifier(getNickName().toLowerCase(), "drawable", context.getPackageName());
             if (imageResId == 0) {
                 Log.e(TAG, "Image resource not found for name: " + imageName);
+            }
+            if (isCaptain){
+                String logoName = imageName + "team";
+                Log.d(TAG, "resolveImageResId: " + logoName);
+                teamLogoId = context.getResources().getIdentifier(logoName, "drawable", context.getPackageName());
+                if (teamLogoId == 0) {
+                    Log.e(TAG, "Team logo not found for name: " + imageName);
+                }
             }
         }
     }
@@ -113,10 +140,13 @@ public class Player implements Parcelable {
     public String toString() {
         return "Player{" +
                 "name='" + name + '\'' +
-                ", rating='" + rating + '\'' +
+                ", rating=" + rating +
                 ", position='" + position + '\'' +
                 ", nickName='" + nickName + '\'' +
-                ", jerseyNo='" + jerseyNumber + '\'' +
+                ", jerseyNumber='" + jerseyNumber + '\'' +
+                ", imageResId=" + imageResId +
+                ", teamLogoId=" + teamLogoId +
+                ", isCaptain=" + isCaptain +
                 '}';
     }
 

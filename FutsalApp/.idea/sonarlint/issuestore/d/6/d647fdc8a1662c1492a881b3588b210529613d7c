@@ -1,22 +1,26 @@
 
 s
-java:S1192%"QDefine a constant instead of duplicating this literal "initPlayerData: " 3 times.(ì»°ÿÿÿÿÿ8³Ş‹†€2
-z	java:S135F"YReduce the total number of break and continue statements in this loop to use at most one.(‡™À·üÿÿÿÿ8´Ş‹†€2
+java:S1192&"QDefine a constant instead of duplicating this literal "initPlayerData: " 3 times.(ì»°ÿÿÿÿÿ8³Ş‹†€2
+z	java:S135G"YReduce the total number of break and continue statements in this loop to use at most one.(‡™À·üÿÿÿÿ8´Ş‹†€2
 ’
-java:S1319>"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(×ö·Ãıÿÿÿÿ8µŞ‹†€2
+java:S1319?"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ƒ¬Ş¨øÿÿÿÿ8µŞ‹†€2
 c
-java:S2259C"FA "NullPointerException" could be thrown; "fixtures" is nullable here.(¦Š–„8›ß‹†€2
+java:S2259D"FA "NullPointerException" could be thrown; "fixtures" is nullable here.(¦Š–„8¶½„ÿ‚2
+]
+java:S2259U"@A "NullPointerException" could be thrown; "p1" is nullable here.(Ó¬±Í8ĞË‰ÿ‚2
+b
+java:S2259V"@A "NullPointerException" could be thrown; "p2" is nullable here.(Û©Ïúÿÿÿÿ8ĞË‰ÿ‚2
 V
-java:S1118":Add a private constructor to hide the implicit public one.(Ğä-8ß‹†€2
-]	java:S125"<This block of commented-out lines of code should be removed.(òÒ¬úÿÿÿÿ8¨ß‹†€2
-X	java:S125""<This block of commented-out lines of code should be removed.(ÁšÏ·8¨ß‹†€2
+java:S1118":Add a private constructor to hide the implicit public one.(Ğä-8ß‹†€2
+]	java:S125 "<This block of commented-out lines of code should be removed.(òÒ¬úÿÿÿÿ8¨ß‹†€2
+X	java:S125#"<This block of commented-out lines of code should be removed.(ÁšÏ·8¨ß‹†€2
 8
-java:S3626P"Remove this redundant jump.(ÉŠ©ƒ8©ß‹†€2
+java:S3626Q"Remove this redundant jump.(ÉŠ©ƒ8©ß‹†€2
 B
-java:S1659D" Declare "p2" on a separate line.(£ÿÌøÿÿÿÿ8ªß‹†€2
+java:S1659E" Declare "p2" on a separate line.(£ÿÌøÿÿÿÿ8ªß‹†€2
 \
-java:S1128"?Remove this unused import 'com.nura.futsalapp.data.PlayerData'.(òªŸµ8ÔÀŒ†€2
+java:S1128	"?Remove this unused import 'com.nura.futsalapp.data.PlayerData'.(òªŸµ8Æ½„ÿ‚2
 S
-java:S1128"1Remove this unused import 'java.util.Collection'.(¹ÉĞšùÿÿÿÿ8ÔÀŒ†€2
+java:S1128"1Remove this unused import 'java.util.Collection'.(¹ÉĞšùÿÿÿÿ8Æ½„ÿ‚2
 T
-java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8ÕÀŒ†€2
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8Æ½„ÿ‚2

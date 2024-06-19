@@ -3,4 +3,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#707777</color>
+    <color name="transparent_purple">#B3330039</color>
+    <color name="transparent_white">#B3FFFFFF</color>
+    <color name="purple">#330039</color>
+    <color name="primary_text_disabled_material_light">#FF0000</color> <!-- Replace with your desired color -->
+
 </resources>

@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/fixtures"
     android:layout_width="match_parent"
+    android:background="@drawable/wallpaper"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="1">
@@ -22,6 +23,7 @@
             android:gravity="bottom"
             android:textStyle="bold"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:text="Matches"></TextView>
 
         <TextView
@@ -30,7 +32,8 @@
             android:layout_alignParentRight="true"
             android:gravity="bottom"
             android:textStyle="bold"
-            android:text="See all"></TextView>
+            android:textColor="@color/white"
+            android:text="See all >"></TextView>
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
@@ -56,6 +59,7 @@
             android:gravity="center"
             android:textStyle="bold"
             android:textSize="20dp"
+            android:textColor="@color/white"
             android:text="Upcoming Matches"></TextView>
 
         <TextView
@@ -64,7 +68,8 @@
             android:layout_alignParentRight="true"
             android:gravity="center"
             android:textStyle="bold"
-            android:text="See all"></TextView>
+            android:textColor="@color/white"
+            android:text="See all >"></TextView>
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView

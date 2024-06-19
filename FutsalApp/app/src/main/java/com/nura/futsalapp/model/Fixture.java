@@ -20,6 +20,8 @@ public class Fixture {
     public Fixture(Player playerOne, Player playerTwo, String score) {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
+        this.playerOne.setCaptain(true);
+        this.playerTwo.setCaptain(true);
         this.score = score;
     }
 

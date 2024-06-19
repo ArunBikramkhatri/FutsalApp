@@ -4,6 +4,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -38,6 +39,8 @@ public class UpcomingFixturesAdapter extends RecyclerView.Adapter<UpcomingFixtur
             Player p2 = fixtureArrayList.get(position).getPlayerTwo();
             holder.fixtureTeamOne.setText(p1.getName());
             holder.fixtureTeamTwo.setText(p2.getName());
+            holder.teamOneLogo.setImageResource(p1.getTeamLogoId());
+            holder.teamTwoLogo.setImageResource(p2.getTeamLogoId());
 //            holder.fixtureScore.setText(fixtureArrayList.get(position).getScore());
         } catch (Exception e) {
            e.printStackTrace();
@@ -51,12 +54,14 @@ public class UpcomingFixturesAdapter extends RecyclerView.Adapter<UpcomingFixtur
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView fixtureTeamOne , fixtureTeamTwo , fixtureScore;
+        private TextView fixtureTeamOne , fixtureTeamTwo;
+        private ImageView teamOneLogo , teamTwoLogo ;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             fixtureTeamOne = itemView.findViewById(R.id.upcomingFixtureTeamOne);
             fixtureTeamTwo = itemView.findViewById(R.id.upcomingFixtureTeamTwo);
-//            fixtureScore = itemView.findViewById(R.id.fixtureScore);
+            teamOneLogo = itemView.findViewById(R.id.upcomingFixtureTeamOneLogo);
+            teamTwoLogo = itemView.findViewById(R.id.upcomingFixtureTeamTwoLogo);
         }
     }
 }

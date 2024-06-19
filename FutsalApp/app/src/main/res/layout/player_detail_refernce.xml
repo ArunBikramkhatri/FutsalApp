@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/transparent_purple">
+
+
+    <LinearLayout
+        android:background="@drawable/border_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/player_stat_heading"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/white"
+            android:text="Age"
+            android:gravity="center"
+            android:layout_weight="0.3"></TextView>
+
+        <TextView
+            android:id="@+id/player_stat_heading_data"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="23"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:textSize="40dp"
+            android:layout_weight="0.7"></TextView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

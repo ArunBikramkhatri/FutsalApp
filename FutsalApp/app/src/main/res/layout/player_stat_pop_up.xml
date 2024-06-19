@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_gravity="center"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/player_stats"
+    android:background="@android:color/transparent"
     android:id="@+id/player_stat_pop_up"
     android:orientation="horizontal">
 

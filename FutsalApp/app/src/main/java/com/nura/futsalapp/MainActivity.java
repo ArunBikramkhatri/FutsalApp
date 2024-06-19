@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initFixturesRecyclerData() {
-        fixtureArrayList = MainOperations.initFixturesRecyclerData(allPlayers);
+        fixtureArrayList = MainOperations.initFixturesRecyclerData(allPlayers ,this);
     }
 
 

@@ -1,6 +1,8 @@
 
-w
-java:S1450"URemove the "player" field and declare it as a local variable in the relevant methods.(Ç¹Ù±úÿÿÿÿ8˜ÔÎ©2
+e
+java:S1659"HDeclare "gamesLayout" and all following declarations on a separate line.(Éğ“„8ş¨ï‚ƒ2
 \
-java:S1874 ":Remove this use of "getParcelableExtra"; it is deprecated.(¹Šâøÿÿÿÿ8ÔÎ©2
-E	java:S108$")Either remove or fill this block of code.(”ı¾8ÔÎ©2
+java:S1874)":Remove this use of "getParcelableExtra"; it is deprecated.(¹Šâøÿÿÿÿ8©ï‚ƒ2
+E	java:S108.")Either remove or fill this block of code.(”ı¾8‚©ï‚ƒ2
+D
+java:S1068"'Remove this unused "TAG" private field.(„¤İİ8ƒ©ï‚ƒ2

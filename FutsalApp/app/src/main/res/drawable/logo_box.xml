@@ -5,6 +5,8 @@
         <shape android:shape="rectangle">
             <solid android:color="#330039"></solid>
             <corners android:radius="1dp"></corners>
+            <stroke android:width="0.5dp"
+                android:color="@color/white"></stroke>
         </shape>
     </item>
     <item android:drawable="@drawable/fixtures">
