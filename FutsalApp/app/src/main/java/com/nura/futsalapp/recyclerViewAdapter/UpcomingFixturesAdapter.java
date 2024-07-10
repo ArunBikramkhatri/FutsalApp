@@ -37,8 +37,8 @@ public class UpcomingFixturesAdapter extends RecyclerView.Adapter<UpcomingFixtur
         try {
             Player p1 = fixtureArrayList.get(position).getPlayerOne();
             Player p2 = fixtureArrayList.get(position).getPlayerTwo();
-            holder.fixtureTeamOne.setText(p1.getName());
-            holder.fixtureTeamTwo.setText(p2.getName());
+            holder.fixtureTeamOne.setText(p1.getNickName());
+            holder.fixtureTeamTwo.setText(p2.getNickName());
             holder.teamOneLogo.setImageResource(p1.getTeamLogoId());
             holder.teamTwoLogo.setImageResource(p2.getTeamLogoId());
 //            holder.fixtureScore.setText(fixtureArrayList.get(position).getScore());

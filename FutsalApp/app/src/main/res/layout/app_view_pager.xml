@@ -10,7 +10,7 @@
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/app_view_pager"
         android:layout_width="match_parent"
-        android:backgroundTint="@color/white"
+        android:background="@color/darkBlue"
         android:layout_height="0dp"
         android:layout_weight="0.92"></androidx.viewpager2.widget.ViewPager2>
 
@@ -18,45 +18,18 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.08"
-        android:elevation="5dp"
         android:translationZ="10dp"
-        android:backgroundTint="@color/white"
+        android:elevation="10dp"
         android:layout_alignParentBottom="true">
-
-<!--        <com.google.android.material.tabs.TabLayout-->
-<!--            android:id="@+id/app_tab_layout"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-
-<!--            <com.google.android.material.tabs.TabItem-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:icon="@drawable/home">-->
-<!--            </com.google.android.material.tabs.TabItem>-->
-
-<!--            <com.google.android.material.tabs.TabItem-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:icon="@drawable/players">-->
-<!--            </com.google.android.material.tabs.TabItem>-->
-
-
-<!--            <com.google.android.material.tabs.TabItem-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:icon="@drawable/fixtures">-->
-<!--            </com.google.android.material.tabs.TabItem>-->
-
-
-
-<!--        </com.google.android.material.tabs.TabLayout>-->
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNav"
-            android:background="@color/purple"
+            app:backgroundTint="@color/darkBlue"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:menu="@menu/custom_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
+            app:itemBackground="@color/darkBlue"
+            app:itemIconTint="@color/bottom_nav_color"
 
+            app:menu="@menu/custom_menu"></com.google.android.material.bottomnavigation.BottomNavigationView>
     </androidx.cardview.widget.CardView>
 
 </LinearLayout>

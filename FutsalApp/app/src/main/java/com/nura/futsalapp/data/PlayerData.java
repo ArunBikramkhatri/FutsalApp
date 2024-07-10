@@ -5,7 +5,7 @@ public class PlayerData {
             "  \"players\": [\n" +
             "    {\n" +
             "      \"name\": \"Nabin Thapa\",\n" +
-            "      \"nickName\": \"NABIN\",\n" +
+            "      \"nickName\": \"NabinT\",\n" +
             "      \"rating\": 9,\n" +
             "      \"position\": \"ST\",\n" +
             "      \"jerseyNumber\": \"10\"\n" +
@@ -56,7 +56,7 @@ public class PlayerData {
             "      \"name\": \"Mahesh Khanal\",\n" +
             "      \"nickName\": \"MAHESH\",\n" +
             "      \"rating\": 6,\n" +
-            "      \"position\": \"GK\",\n" +
+            "      \"position\": \"DF\",\n" +
             "      \"jerseyNumber\": \"9\"\n" +
             "    },\n" +
             "    {\n" +
@@ -84,14 +84,14 @@ public class PlayerData {
             "      \"name\": \"Sujan Shakya\",\n" +
             "      \"nickName\": \"SUJAN\",\n" +
             "      \"rating\": 6,\n" +
-            "      \"position\": \"GK\",\n" +
+            "      \"position\": \"DF\",\n" +
             "      \"jerseyNumber\": \"7\"\n" +
             "    },\n" +
             "    {\n" +
             "      \"name\": \"Manish Shakya\",\n" +
             "      \"nickName\": \"MANISH\",\n" +
             "      \"rating\": 6,\n" +
-            "      \"position\": \"ST\",\n" +
+            "      \"position\": \"GK\",\n" +
             "      \"jerseyNumber\": \"5\"\n" +
             "    },\n" +
             "    {\n" +
@@ -110,9 +110,9 @@ public class PlayerData {
             "    },\n" +
             "    {\n" +
             "      \"name\": \"Nabin Bogati\",\n" +
-            "      \"nickName\": \"BOGATI\",\n" +
+            "      \"nickName\": \"NabinB\",\n" +
             "      \"rating\": 5,\n" +
-            "      \"position\": \"GK\",\n" +
+            "      \"position\": \"DF\",\n" +
             "      \"jerseyNumber\": \"2\"\n" +
             "    },\n" +
             "    {\n" +
@@ -133,7 +133,7 @@ public class PlayerData {
             "      \"name\": \"Anil Kumar Thapa\",\n" +
             "      \"nickName\": \"ANIL\",\n" +
             "      \"rating\": 6,\n" +
-            "      \"position\": \"GK\",\n" +
+            "      \"position\": \"DF\",\n" +
             "      \"jerseyNumber\": \"28\"\n" +
             "    }\n" +
             "  ]\n" +

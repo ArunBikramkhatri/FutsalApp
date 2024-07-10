@@ -4,15 +4,23 @@
 
     <item android:id="@+id/btm_home"
         android:title=""
-        android:icon="@drawable/fixtures"></item>
-
-    <item android:id="@+id/btm_player"
-        android:title=""
+        app:showAsAction="ifRoom"
         android:icon="@drawable/home"></item>
 
-    <item android:id="@+id/btm_game"
+    <item android:id="@+id/btm_table"
         android:title=""
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/table"></item>
+
+    <item android:id="@+id/btm_team"
+        android:title=""
+        app:showAsAction="ifRoom"
         android:icon="@drawable/players"></item>
+
+    <item android:id="@+id/btm_players"
+        android:title=""
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/player"></item>
 
 <!--    <item android:id="@+id/btm_home"-->
 <!--        android:title="Fixture"-->

@@ -1,0 +1,13 @@
+
+–
+java:S1319"tThe type of "pointsTableArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ú“¨ûÿÿÿÿ8£ïã‰2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8‘£ïã‰2
+‚
+java:S1450"`Remove the "pointTableBinding" field and declare it as a local variable in the relevant methods.(ØŒÜæşÿÿÿÿ8úœ“ä‰2
+X	java:S1254"<This block of commented-out lines of code should be removed.(¬°ó”8™£ïã‰2
+b
+java:S1659I"@Declare "win" and all following declarations on a separate line.(İÒí”úÿÿÿÿ8š£ïã‰2
+I
+java:S1068"'Remove this unused "TAG" private field.(ˆıáÓûÿÿÿÿ8›£ïã‰2
+W
+java:S1068"5Remove this unused "pointTableBinding" private field.(ØŒÜæşÿÿÿÿ8Œ“ä‰2

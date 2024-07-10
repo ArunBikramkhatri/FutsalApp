@@ -128,7 +128,7 @@ public class Player implements Parcelable {
             if (isCaptain){
                 String logoName = imageName + "team";
                 Log.d(TAG, "resolveImageResId: " + logoName);
-                teamLogoId = context.getResources().getIdentifier(logoName, "drawable", context.getPackageName());
+                teamLogoId = context.getResources().getIdentifier(logoName, "mipmap", context.getPackageName());
                 if (teamLogoId == 0) {
                     Log.e(TAG, "Team logo not found for name: " + imageName);
                 }

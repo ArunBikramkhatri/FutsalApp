@@ -38,8 +38,8 @@ public class PastFixturesAdapter  extends RecyclerView.Adapter<PastFixturesAdapt
         try {
             Fixture fixture = fixtureArrayList.get(position);
             Log.d(TAG, "onBindViewHolder: " + fixture.toString());
-            holder.teamOneName.setText(fixture.getPlayerOne().getName());
-            holder.teamTwoName.setText(fixture.getPlayerTwo().getName());
+            holder.teamOneName.setText(fixture.getPlayerOne().getNickName());
+            holder.teamTwoName.setText(fixture.getPlayerTwo().getNickName());
             holder.score.setText(fixture.getScore());
             holder.teamOneLogo.setImageResource(fixture.getPlayerOne().getTeamLogoId());
             holder.teamTwoLogo.setImageResource(fixture.getPlayerTwo().getTeamLogoId());

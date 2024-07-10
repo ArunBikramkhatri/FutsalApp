@@ -1,8 +1,12 @@
 
 e
-java:S1659"HDeclare "gamesLayout" and all following declarations on a separate line.(Éğ“„8ş¨ï‚ƒ2
+java:S1659"HDeclare "gamesLayout" and all following declarations on a separate line.(Éğ“„8ıÄ««ƒ2
+^
+java:S1659"ADeclare "pace" and all following declarations on a separate line.(ŠŠ³´8şÄ««ƒ2
+w
+java:S1450"URemove the "player" field and declare it as a local variable in the relevant methods.(Ç¹Ù±úÿÿÿÿ8µ¤â‰2
 \
-java:S1874)":Remove this use of "getParcelableExtra"; it is deprecated.(¹Šâøÿÿÿÿ8©ï‚ƒ2
-E	java:S108.")Either remove or fill this block of code.(”ı¾8‚©ï‚ƒ2
-D
-java:S1068"'Remove this unused "TAG" private field.(„¤İİ8ƒ©ï‚ƒ2
+java:S1874,":Remove this use of "getParcelableExtra"; it is deprecated.(¹Šâøÿÿÿÿ8Å««ƒ2
+J	java:S108M")Either remove or fill this block of code.(š´Øüÿÿÿÿ8ö“Ã‰2
+V
+java:S11448"4Remove this unused private "setLayoutDetail" method.(÷“èÚùÿÿÿÿ8¸Ü­‰2

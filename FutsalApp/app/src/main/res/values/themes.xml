@@ -2,11 +2,26 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.FutsalApp" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowNoTitle">true</item>-->
+
         <item name="android:windowFullscreen">true</item>
     </style>
 
     <style name="Theme.FutsalApp" parent="Base.Theme.FutsalApp" >
         <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false </item>
+        <item name="android:progressDrawable">@drawable/circular_progress_bar</item>
+    </style>
+
+
+    <style name="FootballRoundButton" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">50%</item>
+    </style>
+    
+    <style name="ButtonColor" parent="Theme.AppCompat.NoActionBar">
+        <item name="color">@color/pink</item>
     </style>
 
 </resources>

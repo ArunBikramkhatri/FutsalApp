@@ -55,7 +55,7 @@
             android:layout_gravity="center"
             android:text="........"
             android:textAlignment="center"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="10dp"
             android:textStyle="bold"></TextView>
 
