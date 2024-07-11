@@ -52,9 +52,8 @@ public class TeamFormationFragment extends Fragment {
 
     private FragmentTeamFormationBinding formationBinding;
 
-    private PlayerCardBinding team_one_p1, team_one_p2, team_one_p3, team_one_p4 ,team_one_keeper;
-    private PlayerCardBinding team_two_p1, team_two_p2, team_two_p3, team_two_p4 , team_two_keeper;
-
+    private PlayerCardBinding team_one_p1, team_one_p2, team_one_p3, team_one_p4, team_one_keeper, team_one_s1, team_one_s2, team_one_s3, team_one_s4;
+    private PlayerCardBinding team_two_p1, team_two_p2, team_two_p3, team_two_p4, team_two_keeper, team_two_s1, team_two_s2, team_two_s3, team_two_s4;
     private ArrayList<PlayerCardBinding> teamOnePlayerCardBindings, teamTwoPlayerCardBindings;
 
 
@@ -71,7 +70,7 @@ public class TeamFormationFragment extends Fragment {
         initPlayerPopUp();
     }
 
-    private void initPlayerPopUp(){
+    private void initPlayerPopUp() {
         playerPopUp = new Dialog(activity);
 //        playerPopUp.requestWindowFeature(Window.FEATURE_NO_TITLE);
 //        playerPopUp.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
@@ -84,12 +83,17 @@ public class TeamFormationFragment extends Fragment {
 //            windowInsetsControllerCompat.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
 //        }
     }
+
     private void initPlayerCardBinding() {
         teamOnePlayerCardBindings = new ArrayList<>();
         teamOnePlayerCardBindings.add(team_one_p1);
         teamOnePlayerCardBindings.add(team_one_p2);
         teamOnePlayerCardBindings.add(team_one_p3);
         teamOnePlayerCardBindings.add(team_one_p4);
+        teamOnePlayerCardBindings.add(team_one_s1);
+        teamOnePlayerCardBindings.add(team_one_s2);
+        teamOnePlayerCardBindings.add(team_one_s3);
+        teamOnePlayerCardBindings.add(team_one_s4);
 
 
         teamTwoPlayerCardBindings = new ArrayList<>();
@@ -97,6 +101,10 @@ public class TeamFormationFragment extends Fragment {
         teamTwoPlayerCardBindings.add(team_two_p2);
         teamTwoPlayerCardBindings.add(team_two_p3);
         teamTwoPlayerCardBindings.add(team_two_p4);
+        teamTwoPlayerCardBindings.add(team_two_s1);
+        teamTwoPlayerCardBindings.add(team_two_s2);
+        teamTwoPlayerCardBindings.add(team_two_s3);
+        teamTwoPlayerCardBindings.add(team_two_s4);
 
         setPlayerOnClickListener();
 
@@ -114,11 +122,11 @@ public class TeamFormationFragment extends Fragment {
         teamOnePlayers = teamFormation.getTeamOne();
         teamTwoPlayers = teamFormation.getTeamTwo();
 
-        keepers.add(teamOnePlayers.get(teamOnePlayers.size() -1));
-        keepers.add(teamTwoPlayers.get(teamTwoPlayers.size() -1));
+        keepers.add(teamOnePlayers.get(teamOnePlayers.size() - 1));
+        keepers.add(teamTwoPlayers.get(teamTwoPlayers.size() - 1));
 
-        teamOnePlayers.remove(teamOnePlayers.get(teamOnePlayers.size() -1));
-        teamTwoPlayers.remove(teamTwoPlayers.get(teamOnePlayers.size() -1));
+        teamOnePlayers.remove(teamOnePlayers.get(teamOnePlayers.size() - 1));
+        teamTwoPlayers.remove(teamTwoPlayers.get(teamTwoPlayers.size() - 1));
 
         Collections.shuffle(teamOnePlayers);
         Collections.shuffle(teamTwoPlayers);
@@ -151,13 +159,20 @@ public class TeamFormationFragment extends Fragment {
         team_one_p3 = view.teamOneP3;
         team_one_p4 = view.teamOneP4;
         team_one_keeper = view.keeperOne;
+        team_one_s1 = view.teamOneS1;
+        team_one_s2 = view.teamOneS2;
+        team_one_s3 = view.teamOneS3;
+        team_one_s4 = view.teamOneS4;
 
         team_two_p1 = view.teamTwoP1;
         team_two_p2 = view.teamTwoP2;
         team_two_p3 = view.teamTwoP3;
         team_two_p4 = view.teamTwoP4;
         team_two_keeper = view.keeperTwo;
-
+        team_two_s1 = view.teamTwoS1;
+        team_two_s2 = view.teamTwoS2;
+        team_two_s3 = view.teamTwoS3;
+        team_two_s4 = view.teamTwoS4;
         makeTeam = view.makeTeam;
 
         initPlayerCardBinding();
@@ -201,26 +216,44 @@ public class TeamFormationFragment extends Fragment {
     }
 
     private void setField() {
-        for (int i = 0; i < teamOnePlayerCardBindings.size(); i++) {
+        float sub_alpha = 0.7F;
+        for (int i = 0; i < teamOnePlayers.size(); i++) {
             teamOnePlayerCardBindings.get(i).playerCardName.setText(teamOnePlayers.get(i).getNickName());
             teamOnePlayerCardBindings.get(i).playerImg.setImageResource(teamOnePlayers.get(i).getImageResId());
+            if (i >= 4) {
+                teamOnePlayerCardBindings.get(i).playerCard.setVisibility(View.VISIBLE);
+                teamOnePlayerCardBindings.get(i).playerCardName.setVisibility(View.INVISIBLE);
+                teamOnePlayerCardBindings.get(i).playerImg.setVisibility(View.VISIBLE);
+                teamOnePlayerCardBindings.get(i).playerImg.setAlpha(sub_alpha);
+                teamOnePlayerCardBindings.get(i).playerCard.setScaleX(0.5F);
+                teamOnePlayerCardBindings.get(i).playerCard.setScaleY(0.5F);
+            }
         }
         team_one_keeper.playerImg.setImageResource(keepers.get(0).getImageResId());
         team_one_keeper.playerCardName.setText(keepers.get(0).getNickName());
-        for (int i = 0; i < teamTwoPlayerCardBindings.size(); i++) {
+        for (int i = 0; i < teamTwoPlayers.size(); i++) {
             teamTwoPlayerCardBindings.get(i).playerCardName.setText(teamTwoPlayers.get(i).getNickName());
             teamTwoPlayerCardBindings.get(i).playerImg.setImageResource(teamTwoPlayers.get(i).getImageResId());
+
+            if (i >= 4) {
+                teamTwoPlayerCardBindings.get(i).playerCard.setVisibility(View.VISIBLE);
+                teamTwoPlayerCardBindings.get(i).playerCardName.setVisibility(View.INVISIBLE);
+                teamTwoPlayerCardBindings.get(i).playerImg.setVisibility(View.VISIBLE);
+                teamTwoPlayerCardBindings.get(i).playerImg.setAlpha(sub_alpha);
+                teamTwoPlayerCardBindings.get(i).playerCard.setScaleX(0.5F);
+                teamTwoPlayerCardBindings.get(i).playerCard.setScaleY(0.5F);
+            }
         }
         team_two_keeper.playerCardName.setText(keepers.get(1).getNickName());
         team_two_keeper.playerImg.setImageResource(keepers.get(1).getImageResId());
     }
 
-    private void setPlayerOnClickListener(){
+    private void setPlayerOnClickListener() {
         for (PlayerCardBinding p : teamOnePlayerCardBindings) {
             p.playerCard.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    playerPopUp.setContentView(playerStatPopUpBinding.playerStatPopUp) ;
+                    playerPopUp.setContentView(playerStatPopUpBinding.playerStatPopUp);
                     playerStatPopUpBinding.playerStatImg.setImageResource(Integer.getInteger(String.valueOf(p.playerImg.getId())));
                     playerPopUp.show();
                 }
@@ -230,7 +263,7 @@ public class TeamFormationFragment extends Fragment {
             p.playerCard.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    playerPopUp.setContentView(playerStatPopUpBinding.playerStatPopUp) ;
+                    playerPopUp.setContentView(playerStatPopUpBinding.playerStatPopUp);
                     playerStatPopUpBinding.playerStatImg.setImageResource(teamOnePlayers.get(1).getImageResId());
                     playerPopUp.show();
                 }

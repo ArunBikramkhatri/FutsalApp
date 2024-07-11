@@ -1,0 +1,9 @@
+
+ˆ
+java:S1319"kThe type of "goalScorers" should be an interface such as "List" rather than the implementation "ArrayList".(‘ó²¢8û÷¦‡Š2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñýÿÿÿÿ8ü÷¦‡Š2
+X	java:S1250"<This block of commented-out lines of code should be removed.(¬°ó”8“ø¦‡Š2
+E
+java:S1659E"#Declare "goals" on a separate line.(ªÇ¸¢þÿÿÿÿ8”ø¦‡Š2
+I
+java:S1068"'Remove this unused "TAG" private field.(ˆýáÓûÿÿÿÿ8—ø¦‡Š2

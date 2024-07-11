@@ -88,7 +88,7 @@ public class MainOperations {
                 p1.resolveImageResId(activity);
                 p2.resolveImageResId(activity);
 
-                fixtureArrayList.add(new Fixture(p1, p2, fixtureDTO.getStatus()));
+                fixtureArrayList.add(new Fixture(p1, p2, fixtureDTO.getStatus() , fixtureDTO.getDate()));
                 Log.d(TAG, "initFixturesRecyclerData: " + fixtureArrayList.toString());
             }
 

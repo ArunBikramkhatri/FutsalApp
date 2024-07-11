@@ -42,7 +42,7 @@
         android:id="@+id/statProgressName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Overall"
+        android:text=""
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="10dp"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/footballfield"
+    android:background="@drawable/footballfieldone"
     tools:context=".ui.TeamFormationFragment">
 
     <ImageView
@@ -50,6 +50,46 @@
         app:layout_constraintWidth_percent="0.91"
         tools:ignore="MissingConstraints">
 
+
+        <include
+            android:id="@+id/team_one_s1"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></include>
+
+        <include
+            android:id="@+id/team_one_s2"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/team_one_s1"></include>
+
+        <include
+            android:id="@+id/team_one_s3"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/team_one_s2"></include>
+
+        <include
+            android:id="@+id/team_one_s4"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/team_one_s3"></include>
 
         <include
             android:id="@+id/keeperOne"
@@ -113,6 +153,45 @@
         app:layout_constraintWidth_percent="0.91"
         tools:ignore="MissingConstraints">
 
+
+        <include
+            android:id="@+id/team_two_s1"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"></include>
+
+        <include
+            android:id="@+id/team_two_s2"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/team_two_s1"
+            app:layout_constraintStart_toStartOf="@+id/team_two_s1"></include>
+
+        <include
+            android:id="@+id/team_two_s3"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/team_two_s2"
+            app:layout_constraintStart_toStartOf="@+id/team_two_s2"></include>
+
+        <include
+            android:id="@+id/team_two_s4"
+            layout="@layout/player_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/team_two_s3"
+            app:layout_constraintStart_toStartOf="@+id/team_two_s3"></include>
 
         <include
             android:id="@+id/keeperTwo"

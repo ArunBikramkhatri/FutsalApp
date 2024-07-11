@@ -4,7 +4,15 @@ public class FixtureDTO {
     private String player_one;
     private String player_two;
     private String status;
+    private String date;
 
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     public FixtureDTO() {
     }

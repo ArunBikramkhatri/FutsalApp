@@ -6,7 +6,6 @@ java:S1659"ADeclare "pace" and all following declarations on a separate line.(
 w
 java:S1450"URemove the "player" field and declare it as a local variable in the relevant methods.(Ç¹Ù±úÿÿÿÿ8µ¤â‰2
 \
-java:S1874,":Remove this use of "getParcelableExtra"; it is deprecated.(¹Šâøÿÿÿÿ8Å««ƒ2
-J	java:S108M")Either remove or fill this block of code.(š´Øüÿÿÿÿ8ö“Ã‰2
-V
-java:S11448"4Remove this unused private "setLayoutDetail" method.(÷“èÚùÿÿÿÿ8¸Ü­‰2
+java:S18745":Remove this use of "getParcelableExtra"; it is deprecated.(¹Šâøÿÿÿÿ8Å««ƒ2
+X	java:S125;"<This block of commented-out lines of code should be removed.(•È¹ä8Õàÿ‰Š2
+J	java:S108X")Either remove or fill this block of code.(š´Øüÿÿÿÿ8ö“Ã‰2

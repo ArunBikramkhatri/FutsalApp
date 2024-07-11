@@ -31,21 +31,32 @@ public class PlayerDetailsActivity extends AppCompatActivity {
 
         playerDetailsBinding = ActivityPlayerDetailsBinding.inflate(getLayoutInflater());
         View view = playerDetailsBinding.getRoot();
+        initFields();
+        setContentView(view);
+        setLayoutDetail();
+        getIntentData();
+    }
+
+    private void initFields(){
         ageLayout = playerDetailsBinding.ageLayout;
         gamesLayout = playerDetailsBinding.gamesLayout;
         goalsLayout = playerDetailsBinding.goalsLayout;
         overallRating = playerDetailsBinding.overall;
-        setContentView(view);
-        getIntentData();
+        pace = playerDetailsBinding.pace;
+        shooting = playerDetailsBinding.shooting;
+        passing = playerDetailsBinding.passing;
+        dribbling = playerDetailsBinding.dribbling;
+        defence = playerDetailsBinding.defence;
     }
-
     private void getIntentData() {
         try {
             player = getIntent().getParcelableExtra(Const.PLAYER);
+
             if (player != null) {
                 Log.d(TAG, "getIntentData: " + player.toString());
                 player.setCaptain(true);
                 player.resolveImageResId(this);
+//                setLayoutDetail();
                 setPlayerData(player);
             }
         } catch (Exception e) {
@@ -66,7 +77,7 @@ public class PlayerDetailsActivity extends AppCompatActivity {
     }
 
     private void setPlayerData(Player player) {
-
+        playerDetailsBinding.playerDetailPosition.setText(player.getPosition());
         ageLayout.playerStatHeadingData.setText("24");
         gamesLayout.playerStatHeadingData.setText("4");
         goalsLayout.playerStatHeadingData.setText("21");
@@ -86,21 +97,21 @@ public class PlayerDetailsActivity extends AppCompatActivity {
     public void setFootballRating() {
         int x = 90;
         overallRating.playerRatingProgress.setProgress(x);
-        overallRating.playerRatingProgressText.setText(x);
+        overallRating.playerRatingProgressText.setText(String.valueOf(x));
 
         pace.playerRatingProgress.setProgress(x);
-        pace.playerRatingProgressText.setText(x);
+        pace.playerRatingProgressText.setText(String.valueOf(x));
 
         shooting.playerRatingProgress.setProgress(x);
-        shooting.playerRatingProgressText.setText(x);
+        shooting.playerRatingProgressText.setText(String.valueOf(x));
 
         passing.playerRatingProgress.setProgress(x);
-        passing.playerRatingProgressText.setText(x);
+        passing.playerRatingProgressText.setText(String.valueOf(x));
 
         dribbling.playerRatingProgress.setProgress(x);
-        dribbling.playerRatingProgressText.setText(x);
+        dribbling.playerRatingProgressText.setText(String.valueOf(x));
 
         defence.playerRatingProgress.setProgress(x);
-        defence.playerRatingProgressText.setText(x);
+        defence.playerRatingProgressText.setText(String.valueOf(x));
     }
 }

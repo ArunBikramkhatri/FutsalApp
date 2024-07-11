@@ -1,12 +1,12 @@
 
 
-java:S1319"pThe type of "fixtureArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ª¬©­8œãåş‚2
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8ãåş‚2
+java:S1319"pThe type of "fixtureArrayList" should be an interface such as "List" rather than the implementation "ArrayList".(ª¬©­8ÁÊ¼ŠŠ2
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8ÃÊ¼ŠŠ2
 ƒ
-java:S1450"aRemove the "pastFixtureBinding" field and declare it as a local variable in the relevant methods.(×ÅœÎÿÿÿÿÿ8¢ãåş‚2
+java:S1450"aRemove the "pastFixtureBinding" field and declare it as a local variable in the relevant methods.(×ÅœÎÿÿÿÿÿ8©ÁÌŠŠ2
 j
-java:S1659:"HDeclare "teamTwoName" and all following declarations on a separate line.(¶¹¾Öşÿÿÿÿ8§ãåş‚2
+java:S1659;"HDeclare "teamTwoName" and all following declarations on a separate line.(µÜû‹úÿÿÿÿ8şÊ¼ŠŠ2
 E
-java:S1659;")Declare "teamTwoLogo" on a separate line.(±¢ÛZ8§ãåş‚2
+java:S1659<")Declare "teamTwoLogo" on a separate line.(±¢ÛZ8şÊ¼ŠŠ2
 X
-java:S1068"6Remove this unused "pastFixtureBinding" private field.(×ÅœÎÿÿÿÿÿ8©ãåş‚2
+java:S1068"6Remove this unused "pastFixtureBinding" private field.(×ÅœÎÿÿÿÿÿ8°ÁÌŠŠ2

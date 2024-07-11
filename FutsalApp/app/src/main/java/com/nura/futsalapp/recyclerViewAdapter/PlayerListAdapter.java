@@ -45,7 +45,7 @@ public class PlayerListAdapter extends RecyclerView.Adapter<PlayerListAdapter.Vi
             Player player = playerArrayList.get(position);
             holder.player_name.setText(player.getName());
             holder.player_position.setText(player.getPosition());
-//            holder.player_rating.setText(String.valueOf(player.getRating()));
+            holder.player_rating.setText(String.valueOf(player.getRating()));
             holder.player_list_img.setImageResource(player.getImageResId());
 
             holder.player_detail.setOnClickListener(new View.OnClickListener() {

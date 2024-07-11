@@ -4,7 +4,8 @@ java:S1319"oThe type of "playerArrayList" should be an interface such as "List
 E
 java:S16043"(Make this anonymous inner class a lambda(ëàø†8¶Ğê¨2
 {	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(êÈ‰Ñıÿÿÿÿ8·Ğê¨2
-]	java:S1250"<This block of commented-out lines of code should be removed.(‡®Ï¯ùÿÿÿÿ8¿±şù‚2
+^
+java:S1874C"ARemove this use of "overridePendingTransition"; it is deprecated.(¥øÑ8£Ïû‰Š2
 w	java:S116M"VRename this field "player_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8ÚĞê¨2
 {	java:S116M"ZRename this field "player_position" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8ÚĞê¨2
 y	java:S116M"XRename this field "player_rating" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³ÖÈÁıÿÿÿÿ8ÚĞê¨2

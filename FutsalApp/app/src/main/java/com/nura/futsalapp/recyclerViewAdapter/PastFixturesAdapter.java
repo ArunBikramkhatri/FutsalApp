@@ -41,6 +41,7 @@ public class PastFixturesAdapter  extends RecyclerView.Adapter<PastFixturesAdapt
             holder.teamOneName.setText(fixture.getPlayerOne().getNickName());
             holder.teamTwoName.setText(fixture.getPlayerTwo().getNickName());
             holder.score.setText(fixture.getScore());
+            holder.gameWeek.setText("GameWeek " + (position+1));
             holder.teamOneLogo.setImageResource(fixture.getPlayerOne().getTeamLogoId());
             holder.teamTwoLogo.setImageResource(fixture.getPlayerTwo().getTeamLogoId());
         }catch (Exception e){
@@ -55,11 +56,12 @@ public class PastFixturesAdapter  extends RecyclerView.Adapter<PastFixturesAdapt
 
     public class ViewHolder extends RecyclerView.ViewHolder {
 
-        private TextView teamOneName , teamTwoName,  score ;
+        private TextView teamOneName , teamTwoName,  score , gameWeek;
         private ImageView teamOneLogo , teamTwoLogo ;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            gameWeek = itemView.findViewById(R.id.gameWeek);
             teamOneName = itemView.findViewById(R.id.pastFixtureTeamOne) ;
             teamTwoName = itemView.findViewById(R.id.pastFixtureTeamTwo) ;
             score = itemView.findViewById(R.id.textView2);

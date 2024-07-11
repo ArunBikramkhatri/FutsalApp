@@ -1,7 +1,13 @@
 
+Q
+java:S1659""4Declare "goalScorerRecyclerView" on a separate line.(ÿÑÔ8æÆ˜‡Š2
 ‚
-java:S1450"`Remove the "pointTableAdapter" field and declare it as a local variable in the relevant methods.(“¹şÿÿÿÿ8²”–ä‰2
-}
-java:S1450"[Remove the "recyclerView" field and declare it as a local variable in the relevant methods.(¿á© ıÿÿÿÿ8²”–ä‰2
+java:S1450""eRemove the "goalScorerRecyclerView" field and declare it as a local variable in the relevant methods.(ÿÑÔ8æÆ˜‡Š2
+~
+java:S1450"aRemove the "goalScorersAdapter" field and declare it as a local variable in the relevant methods.(»Öì½8æÆ˜‡Š2
+‚
+java:S1450"`Remove the "pointTableAdapter" field and declare it as a local variable in the relevant methods.(“¹şÿÿÿÿ8æÆ˜‡Š2
+x
+java:S1450""[Remove the "recyclerView" field and declare it as a local variable in the relevant methods.(ÿÑÔ8æÆ˜‡Š2
 E
-java:S1185."(Remove this method to simply inherit it.(ßìê¯8½”–ä‰2
+java:S1185J"(Remove this method to simply inherit it.(ßìê¯8ìÆ˜‡Š2

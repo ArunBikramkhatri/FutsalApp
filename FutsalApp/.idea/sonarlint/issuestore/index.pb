@@ -67,8 +67,6 @@ e
 Uapp/src/main/java/com/nura/futsalapp/recyclerViewAdapter/UpcomingFixturesAdapter.java,8/d/8d727ce857051585627c18a7bb438f5c2be2c9ea
 Å
 Qapp/src/main/java/com/nura/futsalapp/recyclerViewAdapter/PastFixturesAdapter.java,b/2/b29bb1c7a1feb0962076d2b66d27e14113c685c7
-h
-8app/src/main/java/com/nura/futsalapp/ui/PointsTable.java,e/4/e497d78e5c046b5a6a13df562d3ec35d363f1a8c
 p
 @app/src/main/java/com/nura/futsalapp/ui/PointsTableFragment.java,3/f/3f7f1cdefba8d7b7b30e4a6265defae9bcf057ed
 <
@@ -77,3 +75,7 @@ p
 Oapp/src/main/java/com/nura/futsalapp/recyclerViewAdapter/PointTableAdapter.java,f/e/feefc33f1f7925462486979f9681fff4eb743955
 k
 ;app/src/main/java/com/nura/futsalapp/model/PointsTable.java,e/4/e469037f540a41d7b1e275b16d12a61cbdde01e9
+j
+:app/src/main/java/com/nura/futsalapp/model/GoalScorer.java,b/3/b3c4d9c96dcc8657e05b067df436187d6d819c68
+Ä
+Papp/src/main/java/com/nura/futsalapp/recyclerViewAdapter/GoalScorersAdapter.java,8/1/81c65f9dd0c5b2c5e62cf370ebceee166fd369b0

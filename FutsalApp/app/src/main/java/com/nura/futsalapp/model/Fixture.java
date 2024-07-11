@@ -5,6 +5,7 @@ public class Fixture {
     private Player playerTwo ;
 
     private String score ;
+    private String date ;
 
     public String getScore() {
         return score;
@@ -17,12 +18,19 @@ public class Fixture {
     public Fixture() {
     }
 
-    public Fixture(Player playerOne, Player playerTwo, String score) {
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public Fixture(Player playerOne, Player playerTwo, String score, String date) {
         this.playerOne = playerOne;
         this.playerTwo = playerTwo;
-        this.playerOne.setCaptain(true);
-        this.playerTwo.setCaptain(true);
         this.score = score;
+        this.date = date;
     }
 
     public Player getPlayerOne() {

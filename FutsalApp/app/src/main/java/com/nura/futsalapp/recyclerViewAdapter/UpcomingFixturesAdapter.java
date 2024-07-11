@@ -41,6 +41,7 @@ public class UpcomingFixturesAdapter extends RecyclerView.Adapter<UpcomingFixtur
             holder.fixtureTeamTwo.setText(p2.getNickName());
             holder.teamOneLogo.setImageResource(p1.getTeamLogoId());
             holder.teamTwoLogo.setImageResource(p2.getTeamLogoId());
+            holder.date.setText(fixtureArrayList.get(position).getDate());
 //            holder.fixtureScore.setText(fixtureArrayList.get(position).getScore());
         } catch (Exception e) {
            e.printStackTrace();
@@ -54,7 +55,7 @@ public class UpcomingFixturesAdapter extends RecyclerView.Adapter<UpcomingFixtur
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView fixtureTeamOne , fixtureTeamTwo;
+        private TextView fixtureTeamOne , fixtureTeamTwo , date;
         private ImageView teamOneLogo , teamTwoLogo ;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -62,6 +63,7 @@ public class UpcomingFixturesAdapter extends RecyclerView.Adapter<UpcomingFixtur
             fixtureTeamTwo = itemView.findViewById(R.id.upcomingFixtureTeamTwo);
             teamOneLogo = itemView.findViewById(R.id.upcomingFixtureTeamOneLogo);
             teamTwoLogo = itemView.findViewById(R.id.upcomingFixtureTeamTwoLogo);
+            date = itemView.findViewById(R.id.upcomingFixtureDate);
         }
     }
 }

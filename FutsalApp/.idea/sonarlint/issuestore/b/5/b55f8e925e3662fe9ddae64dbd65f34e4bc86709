@@ -1,13 +1,13 @@
 
 j
 java:S1192"HDefine a constant instead of duplicating this literal "    {
-" 19 times.(Ÿñ¼Ñÿÿÿÿÿ8­ŠÏ„€2
+" 18 times.(Ÿñ¼Ñÿÿÿÿÿ8­ŠÏ„€2
 
 java:S1192"]Define a constant instead of duplicating this literal "      \"position\": \"ST\",
-" 4 times.(‹«Şÿÿÿÿÿ8°ŠÏ„€2
+" 3 times.(‹«Şÿÿÿÿÿ8°ŠÏ„€2
 f
 java:S1192"IDefine a constant instead of duplicating this literal "    },
-" 18 times.(¥ÁÊÁ8²ŠÏ„€2
+" 17 times.(¥ÁÊÁ8²ŠÏ„€2
 x
 java:S1192"VDefine a constant instead of duplicating this literal "      \"rating\": 5,
 " 3 times.(â­Ğıÿÿÿÿ8ú‚ç¦ƒ2
@@ -21,9 +21,6 @@ java:S1192"]Define a constant instead of duplicating this literal "      \"pos
 x
 java:S1192"VDefine a constant instead of duplicating this literal "      \"rating\": 6,
 " 6 times.(©¥Õ‚üÿÿÿÿ8µŠÏ„€2
-x
-java:S1192"VDefine a constant instead of duplicating this literal "      \"rating\": 8,
-" 3 times.(ÚƒËøıÿÿÿÿ8ú‚ç¦ƒ2
 z
 java:S1192"^Define a constant instead of duplicating this literal "      \"position\": \"CAM\",
 " 4 times.(Á«¿8¶ŠÏ„€2

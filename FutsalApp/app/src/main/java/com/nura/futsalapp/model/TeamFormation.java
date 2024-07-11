@@ -63,7 +63,7 @@ public class TeamFormation {
             if (playerArrayList.size() >=  4) {
                 x = random.nextInt(4);
             } else {
-                x = random.nextInt(playerArrayList.size()-1);
+                x = random.nextInt(playerArrayList.size());
             }
 
             teamOne.add(playerArrayList.get(x));
@@ -71,7 +71,7 @@ public class TeamFormation {
             if (playerArrayList.size() >=  4) {
                 y = random.nextInt(4);
             } else {
-                y = random.nextInt(playerArrayList.size()-1);
+                y = random.nextInt(playerArrayList.size());
             }
             teamTwo.add(playerArrayList.get(y));
             playerArrayList.remove(y);

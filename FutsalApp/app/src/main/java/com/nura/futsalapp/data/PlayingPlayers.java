@@ -33,13 +33,6 @@ public class PlayingPlayers {
             "      \"jerseyNumber\": \"01\"\n" +
             "    },\n" +
             "    {\n" +
-            "      \"name\": \"Anish Upadhyay\",\n" +
-            "      \"nickName\": \"ANISH\",\n" +
-            "      \"rating\": 8,\n" +
-            "      \"position\": \"ST\",\n" +
-            "      \"jerseyNumber\": \"30\"\n" +
-            "    },\n" +
-            "    {\n" +
             "      \"name\": \"Jagadish Parajuli\",\n" +
             "      \"nickName\": \"JAGADISH\",\n" +
             "      \"rating\": 7,\n" +
